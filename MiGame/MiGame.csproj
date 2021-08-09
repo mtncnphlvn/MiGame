@@ -52,10 +52,10 @@
     <Compile Include="frmDil.Designer.cs">
       <DependentUpon>frmDil.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKullaniciGiris.cs">
+    <Compile Include="Kullanici\frmKullaniciGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmKullaniciGiris.Designer.cs">
+    <Compile Include="Kullanici\frmKullaniciGiris.Designer.cs">
       <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="Localization.Designer.cs">
@@ -78,7 +78,7 @@
     <EmbeddedResource Include="frmDil.resx">
       <DependentUpon>frmDil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmKullaniciGiris.resx">
+    <EmbeddedResource Include="Kullanici\frmKullaniciGiris.resx">
       <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization.en-US.resx">
@@ -116,9 +116,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Kullanici\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\buton_giris.png" />
   </ItemGroup>
