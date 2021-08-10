@@ -61,6 +61,141 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ad.
+        /// </summary>
+        internal static string ad {
+            get {
+                return ResourceManager.GetString("ad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ay.
+        /// </summary>
+        internal static string ay {
+            get {
+                return ResourceManager.GetString("ay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocak.
+        /// </summary>
+        internal static string ay1 {
+            get {
+                return ResourceManager.GetString("ay1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ekim.
+        /// </summary>
+        internal static string ay10 {
+            get {
+                return ResourceManager.GetString("ay10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kasım.
+        /// </summary>
+        internal static string ay11 {
+            get {
+                return ResourceManager.GetString("ay11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aralık.
+        /// </summary>
+        internal static string ay12 {
+            get {
+                return ResourceManager.GetString("ay12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Şubat.
+        /// </summary>
+        internal static string ay2 {
+            get {
+                return ResourceManager.GetString("ay2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mart.
+        /// </summary>
+        internal static string ay3 {
+            get {
+                return ResourceManager.GetString("ay3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nisan.
+        /// </summary>
+        internal static string ay4 {
+            get {
+                return ResourceManager.GetString("ay4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mayıs.
+        /// </summary>
+        internal static string ay5 {
+            get {
+                return ResourceManager.GetString("ay5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Haziran.
+        /// </summary>
+        internal static string ay6 {
+            get {
+                return ResourceManager.GetString("ay6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temmuz.
+        /// </summary>
+        internal static string ay7 {
+            get {
+                return ResourceManager.GetString("ay7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ağustos.
+        /// </summary>
+        internal static string ay8 {
+            get {
+                return ResourceManager.GetString("ay8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eylül.
+        /// </summary>
+        internal static string ay9 {
+            get {
+                return ResourceManager.GetString("ay9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cinsiyet Seçiniz.....
+        /// </summary>
+        internal static string cinsiyet {
+            get {
+                return ResourceManager.GetString("cinsiyet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dil Seçimi :.
         /// </summary>
         internal static string d1 {
@@ -75,6 +210,24 @@ namespace MiGame {
         internal static string d2 {
             get {
                 return ResourceManager.GetString("d2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eksik Karakter!.
+        /// </summary>
+        internal static string eksik1 {
+            get {
+                return ResourceManager.GetString("eksik1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Erkek.
+        /// </summary>
+        internal static string erkek {
+            get {
+                return ResourceManager.GetString("erkek", resourceCulture);
             }
         }
         
@@ -111,6 +264,60 @@ namespace MiGame {
         internal static string g4 {
             get {
                 return ResourceManager.GetString("g4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gün.
+        /// </summary>
+        internal static string gun {
+            get {
+                return ResourceManager.GetString("gun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Harf Giriniz.
+        /// </summary>
+        internal static string hgir {
+            get {
+                return ResourceManager.GetString("hgir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kadın.
+        /// </summary>
+        internal static string kadin {
+            get {
+                return ResourceManager.GetString("kadin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-Posta.
+        /// </summary>
+        internal static string posta {
+            get {
+                return ResourceManager.GetString("posta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Soyad.
+        /// </summary>
+        internal static string soyad {
+            get {
+                return ResourceManager.GetString("soyad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yıl.
+        /// </summary>
+        internal static string yil {
+            get {
+                return ResourceManager.GetString("yil", resourceCulture);
             }
         }
     }

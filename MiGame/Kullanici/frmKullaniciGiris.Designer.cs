@@ -55,7 +55,7 @@
             this.lblEposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
             this.lblEposta.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblEposta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblEposta.Location = new System.Drawing.Point(68, 138);
+            this.lblEposta.Location = new System.Drawing.Point(73, 139);
             this.lblEposta.Name = "lblEposta";
             this.lblEposta.Size = new System.Drawing.Size(107, 29);
             this.lblEposta.TabIndex = 1;

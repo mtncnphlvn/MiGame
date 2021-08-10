@@ -79,7 +79,7 @@ namespace MiGame
 
         private void frmKullaniciGiris_Load(object sender, EventArgs e)
         {
-            yazdir();
+            yazdir();            
         }
       
     }
