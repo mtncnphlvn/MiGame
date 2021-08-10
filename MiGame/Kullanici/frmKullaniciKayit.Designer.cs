@@ -108,6 +108,7 @@
             this.txtEposta.Size = new System.Drawing.Size(281, 23);
             this.txtEposta.TabIndex = 4;
             this.txtEposta.Text = "E-Posta";
+            this.txtEposta.TextChanged += new System.EventHandler(this.txtEposta_TextChanged);
             this.txtEposta.Enter += new System.EventHandler(this.txtEposta_Enter);
             this.txtEposta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEposta_KeyPress);
             this.txtEposta.Leave += new System.EventHandler(this.txtEposta_Leave);
@@ -123,6 +124,10 @@
             this.txtGuvenlik.Size = new System.Drawing.Size(281, 23);
             this.txtGuvenlik.TabIndex = 4;
             this.txtGuvenlik.Text = "Güvenlik Kodu";
+            this.txtGuvenlik.TextChanged += new System.EventHandler(this.txtGuvenlik_TextChanged);
+            this.txtGuvenlik.Enter += new System.EventHandler(this.txtGuvenlik_Enter);
+            this.txtGuvenlik.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGuvenlik_KeyPress);
+            this.txtGuvenlik.Leave += new System.EventHandler(this.txtGuvenlik_Leave);
             // 
             // txtKulAd
             // 
@@ -135,6 +140,10 @@
             this.txtKulAd.Size = new System.Drawing.Size(281, 23);
             this.txtKulAd.TabIndex = 4;
             this.txtKulAd.Text = "Kullanıcı Adı";
+            this.txtKulAd.TextChanged += new System.EventHandler(this.txtKulAd_TextChanged);
+            this.txtKulAd.Enter += new System.EventHandler(this.txtKulAd_Enter);
+            this.txtKulAd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKulAd_KeyPress);
+            this.txtKulAd.Leave += new System.EventHandler(this.txtKulAd_Leave);
             // 
             // txtSifre
             // 
@@ -147,6 +156,9 @@
             this.txtSifre.Size = new System.Drawing.Size(281, 23);
             this.txtSifre.TabIndex = 4;
             this.txtSifre.Text = "Şifre";
+            this.txtSifre.TextChanged += new System.EventHandler(this.txtSifre_TextChanged);
+            this.txtSifre.Enter += new System.EventHandler(this.txtSifre_Enter);
+            this.txtSifre.Leave += new System.EventHandler(this.txtSifre_Leave);
             // 
             // txtSifreTekrar
             // 
@@ -159,6 +171,9 @@
             this.txtSifreTekrar.Size = new System.Drawing.Size(281, 23);
             this.txtSifreTekrar.TabIndex = 4;
             this.txtSifreTekrar.Text = "Şifre Tekrar";
+            this.txtSifreTekrar.TextChanged += new System.EventHandler(this.txtSifreTekrar_TextChanged);
+            this.txtSifreTekrar.Enter += new System.EventHandler(this.txtSifreTekrar_Enter);
+            this.txtSifreTekrar.Leave += new System.EventHandler(this.txtSifreTekrar_Leave);
             // 
             // btnCarpi
             // 
@@ -247,6 +262,8 @@
             this.btnKayitOl.TabIndex = 6;
             this.btnKayitOl.Text = "Kayıt Ol";
             this.btnKayitOl.UseVisualStyleBackColor = false;
+            this.btnKayitOl.MouseLeave += new System.EventHandler(this.btnKayitOl_MouseLeave);
+            this.btnKayitOl.MouseHover += new System.EventHandler(this.btnKayitOl_MouseHover);
             // 
             // lblAdUyari
             // 

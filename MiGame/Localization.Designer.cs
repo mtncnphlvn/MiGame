@@ -295,6 +295,51 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kayıt Ol.
+        /// </summary>
+        internal static string kayit {
+            get {
+                return ResourceManager.GetString("kayit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Güvenlik Kodu.
+        /// </summary>
+        internal static string kod {
+            get {
+                return ResourceManager.GetString("kod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kullanıcı Adı.
+        /// </summary>
+        internal static string kullanici {
+            get {
+                return ResourceManager.GetString("kullanici", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Şifre (En az 8 Haneli).
+        /// </summary>
+        internal static string pass {
+            get {
+                return ResourceManager.GetString("pass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Şifre Tekrar.
+        /// </summary>
+        internal static string passagain {
+            get {
+                return ResourceManager.GetString("passagain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E-Posta.
         /// </summary>
         internal static string posta {

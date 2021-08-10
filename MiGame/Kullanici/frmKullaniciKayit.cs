@@ -59,12 +59,6 @@ namespace MiGame
         private void Cinsiyet(ComboBox combobox)
         {
             en();
-            txtAd.Text = Localization.ad;
-            txtSoyad.Text = Localization.soyad;
-            txtEposta.Text = Localization.posta;
-
-
-
             combobox.Items.Add(Localization.cinsiyet);
             combobox.Items.Add(Localization.kadin);
             combobox.Items.Add(Localization.erkek);
@@ -73,6 +67,20 @@ namespace MiGame
         Tarih tarih = new Tarih();
         private void frmKullaniciKayit_Load(object sender, EventArgs e)
         {
+
+            en();
+            lblKayit.Text = Localization.kayit;
+            txtAd.Text = Localization.ad;
+            txtSoyad.Text = Localization.soyad;
+            txtEposta.Text = Localization.posta;
+            txtGuvenlik.Text = Localization.kod;
+            txtKulAd.Text = Localization.kullanici;
+            txtSifre.Text = Localization.pass;
+            txtSifreTekrar.Text = Localization.passagain;
+            btnKayitOl.Text = Localization.kayit;
+
+
+
             Cinsiyet(cmbCinsiyet);
             tarih.Ay(cmbAy);  // Ay Listeler                    
             tarih.Yil(cmbYil); // Yıl Listeler
@@ -108,12 +116,10 @@ namespace MiGame
         {
             textDoldur.TextEnter(txtAd, Localization.ad);
         }
-
         private void txtAd_Leave(object sender, EventArgs e)
         {
             textDoldur.TextLeave(txtAd, Localization.ad);
         }
-
         private void txtAd_KeyPress(object sender, KeyPressEventArgs e)
         {
             kontrol.HarfGir(e);
@@ -122,41 +128,105 @@ namespace MiGame
         {
             kontrol.KarakterKontrol(txtAd, 0, 2, lblAdUyari);
         }
-
         private void txtSoyad_Enter(object sender, EventArgs e)
         {
 
             textDoldur.TextEnter(txtSoyad, Localization.soyad);
         }
-
         private void txtSoyad_Leave(object sender, EventArgs e)
         {
             textDoldur.TextLeave(txtSoyad, Localization.soyad);
         }
-
         private void txtSoyad_KeyPress(object sender, KeyPressEventArgs e)
         {
             kontrol.HarfGir(e);
         }
-
         private void txtSoyad_TextChanged(object sender, EventArgs e)
         {
-            kontrol.KarakterKontrol(txtAd, 0, 2, lblSoyadUyari);
+            kontrol.KarakterKontrol(txtSoyad, 0, 2, lblSoyadUyari);
         }
-
         private void txtEposta_Enter(object sender, EventArgs e)
         {
             textDoldur.TextEnter(txtEposta, Localization.posta);
         }
-
         private void txtEposta_Leave(object sender, EventArgs e)
         {
             textDoldur.TextLeave(txtEposta, Localization.posta);
         }
-
         private void txtEposta_KeyPress(object sender, KeyPressEventArgs e)
         {
             kontrol.EpostaHarf(e);
+        }
+        private void txtEposta_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.KarakterKontrol(txtEposta, 0, 2, lblEpostaUyari);
+        }
+        private void txtGuvenlik_Enter(object sender, EventArgs e)
+        {
+            textDoldur.TextEnter(txtKulAd, Localization.kod);
+        }
+        private void txtGuvenlik_Leave(object sender, EventArgs e)
+        {
+            textDoldur.TextLeave(txtKulAd, Localization.kod);
+        }
+        private void txtGuvenlik_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            kontrol.KullaniciHarf(e);
+        }
+        private void txtGuvenlik_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.KarakterKontrol(txtSoyad, 0, 2, lblKodUyari);
+        }
+                private void txtKulAd_Enter(object sender, EventArgs e)
+        {
+            textDoldur.TextEnter(txtKulAd, Localization.kullanici);
+        }
+        private void txtKulAd_Leave(object sender, EventArgs e)
+        {
+            textDoldur.TextLeave(txtKulAd, Localization.kullanici);
+        }
+        private void txtKulAd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            kontrol.KullaniciHarf(e);
+        }
+        private void txtKulAd_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.KarakterKontrol(txtKulAd, 0, 5, lblKuladUyari);
+            kontrol.KullaniciAdiKontrol(txtKulAd, lblKuladUyari);
+        }
+        private void txtSifre_Enter(object sender, EventArgs e)
+        {
+            textDoldur.SifreEnter(txtSifre, Localization.pass);
+        }
+        private void txtSifre_Leave(object sender, EventArgs e)
+        {
+            textDoldur.SifreLeave(txtSifre, Localization.pass);
+        }
+        private void txtSifre_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.KarakterKontrol(txtSifre, 0, 8, lblSifreUyari);
+        }
+        private void txtSifreTekrar_Enter(object sender, EventArgs e)
+        {
+            textDoldur.SifreEnter(txtSifreTekrar, Localization.passagain);
+        }
+        private void txtSifreTekrar_Leave(object sender, EventArgs e)
+        {
+            textDoldur.SifreLeave(txtSifreTekrar, Localization.passagain);
+        }
+        private void txtSifreTekrar_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.KarakterKontrol(txtSifreTekrar, 0, 8, lblSifreTekrarUyari);
+        }
+
+        private void btnKayitOl_MouseHover(object sender, EventArgs e)
+        {
+            btnKayitOl.BackgroundImage = Properties.Resources.buton_giris_over;
+        }
+
+        private void btnKayitOl_MouseLeave(object sender, EventArgs e)
+        {
+            btnKayitOl.BackgroundImage = Properties.Resources.buton_giris;
         }
     }
 }

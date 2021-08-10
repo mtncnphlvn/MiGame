@@ -195,6 +195,21 @@
   <data name="kadin" xml:space="preserve">
     <value>Kadın</value>
   </data>
+  <data name="kayit" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="kod" xml:space="preserve">
+    <value>Güvenlik Kodu</value>
+  </data>
+  <data name="kullanici" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="pass" xml:space="preserve">
+    <value>Şifre (En az 8 Haneli)</value>
+  </data>
+  <data name="passagain" xml:space="preserve">
+    <value>Şifre Tekrar</value>
+  </data>
   <data name="posta" xml:space="preserve">
     <value>E-Posta</value>
   </data>
