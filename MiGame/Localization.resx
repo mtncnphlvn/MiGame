@@ -159,8 +159,14 @@
   <data name="ay9" xml:space="preserve">
     <value>Eylül</value>
   </data>
+  <data name="bos" xml:space="preserve">
+    <value>Boş Bırakılamaz !</value>
+  </data>
   <data name="cinsiyet" xml:space="preserve">
     <value>Cinsiyet Seçiniz....</value>
+  </data>
+  <data name="cinsiyet2" xml:space="preserve">
+    <value>Cinsiyet Seçiniz</value>
   </data>
   <data name="d1" xml:space="preserve">
     <value>Dil Seçimi :</value>
@@ -201,6 +207,9 @@
   <data name="kod" xml:space="preserve">
     <value>Güvenlik Kodu</value>
   </data>
+  <data name="kod2" xml:space="preserve">
+    <value>Kod</value>
+  </data>
   <data name="kullanici" xml:space="preserve">
     <value>Kullanıcı Adı</value>
   </data>
@@ -210,8 +219,14 @@
   <data name="passagain" xml:space="preserve">
     <value>Şifre Tekrar</value>
   </data>
+  <data name="passes" xml:space="preserve">
+    <value>Şifreler Eşleşmiyor</value>
+  </data>
   <data name="posta" xml:space="preserve">
     <value>E-Posta</value>
+  </data>
+  <data name="sec" xml:space="preserve">
+    <value>seçiniz</value>
   </data>
   <data name="soyad" xml:space="preserve">
     <value>Soyad</value>

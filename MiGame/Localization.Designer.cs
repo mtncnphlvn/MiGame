@@ -187,11 +187,29 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Boş Bırakılamaz !.
+        /// </summary>
+        internal static string bos {
+            get {
+                return ResourceManager.GetString("bos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cinsiyet Seçiniz.....
         /// </summary>
         internal static string cinsiyet {
             get {
                 return ResourceManager.GetString("cinsiyet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cinsiyet Seçiniz.
+        /// </summary>
+        internal static string cinsiyet2 {
+            get {
+                return ResourceManager.GetString("cinsiyet2", resourceCulture);
             }
         }
         
@@ -313,6 +331,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kod.
+        /// </summary>
+        internal static string kod2 {
+            get {
+                return ResourceManager.GetString("kod2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kullanıcı Adı.
         /// </summary>
         internal static string kullanici {
@@ -340,11 +367,29 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Şifreler Eşleşmiyor.
+        /// </summary>
+        internal static string passes {
+            get {
+                return ResourceManager.GetString("passes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E-Posta.
         /// </summary>
         internal static string posta {
             get {
                 return ResourceManager.GetString("posta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seçiniz.
+        /// </summary>
+        internal static string sec {
+            get {
+                return ResourceManager.GetString("sec", resourceCulture);
             }
         }
         

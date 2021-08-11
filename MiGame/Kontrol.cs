@@ -11,7 +11,21 @@ namespace MiGame
 {
     class Kontrol
     {
-   
+        public bool TarihKontrol(ComboBox comboBox, Label label, string yazi)
+        {
+            bool sonuc = false;
+
+            if (comboBox.SelectedIndex == 0)
+            {
+                label.Text = yazi + " " +Localization.sec;
+            }
+            else
+            {
+                label.Text = "";
+                sonuc = true;
+            }
+            return sonuc;
+        }
 
         //------------------------------------------------------- HARF SAYI KONTROL ------------------------------------------------------------------
         public void HarfGir(KeyPressEventArgs e)

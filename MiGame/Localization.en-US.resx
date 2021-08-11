@@ -159,8 +159,14 @@
   <data name="ay9" xml:space="preserve">
     <value>September</value>
   </data>
+  <data name="bos" xml:space="preserve">
+    <value>Cannot be blank!</value>
+  </data>
   <data name="cinsiyet" xml:space="preserve">
     <value>Choose Gender.....</value>
+  </data>
+  <data name="cinsiyet2" xml:space="preserve">
+    <value>Choose Gender</value>
   </data>
   <data name="d1" xml:space="preserve">
     <value>Language Selection :</value>
@@ -201,6 +207,9 @@
   <data name="kod" xml:space="preserve">
     <value>Security Code</value>
   </data>
+  <data name="kod2" xml:space="preserve">
+    <value>Code</value>
+  </data>
   <data name="kullanici" xml:space="preserve">
     <value>Username</value>
   </data>
@@ -210,8 +219,14 @@
   <data name="passagain" xml:space="preserve">
     <value>Password Again</value>
   </data>
+  <data name="passes" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
   <data name="posta" xml:space="preserve">
     <value>E-Mail</value>
+  </data>
+  <data name="sec" xml:space="preserve">
+    <value>choose</value>
   </data>
   <data name="soyad" xml:space="preserve">
     <value>Surname</value>

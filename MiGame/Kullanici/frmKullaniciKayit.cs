@@ -37,6 +37,14 @@ namespace MiGame
         {
             move = false;
         }
+        private void btnKod_MouseHover(object sender, EventArgs e)
+        {
+            btnKod.BackgroundImage = Properties.Resources.buton_giris_over;
+        }
+        private void btnKod_MouseLeave(object sender, EventArgs e)
+        {
+            btnKod.BackgroundImage = Properties.Resources.buton_giris;
+        }
         private void btnCarpi_MouseHover(object sender, EventArgs e)
         {
             btnCarpi.BackgroundImage = Properties.Resources.cross_over;
@@ -64,10 +72,23 @@ namespace MiGame
             combobox.Items.Add(Localization.erkek);
             combobox.SelectedIndex = 0;
         }
+        private void temizle()
+        {
+            lblAdUyari.Text = "";
+            lblSoyadUyari.Text = "";
+            lblTarihUyari.Text = "";
+            lblCinsiyetUyari.Text = "";
+            lblEpostaUyari.Text = "";
+            lblKodUyari.Text = "";
+            lblKuladUyari.Text = "";
+            lblSifreUyari.Text = "";
+            lblSifreTekrarUyari.Text = "";
+
+        }
         Tarih tarih = new Tarih();
         private void frmKullaniciKayit_Load(object sender, EventArgs e)
         {
-
+            temizle();
             en();
             lblKayit.Text = Localization.kayit;
             txtAd.Text = Localization.ad;
@@ -78,6 +99,7 @@ namespace MiGame
             txtSifre.Text = Localization.pass;
             txtSifreTekrar.Text = Localization.passagain;
             btnKayitOl.Text = Localization.kayit;
+            btnKod.Text = Localization.kod2;
 
 
 
@@ -163,11 +185,11 @@ namespace MiGame
         }
         private void txtGuvenlik_Enter(object sender, EventArgs e)
         {
-            textDoldur.TextEnter(txtKulAd, Localization.kod);
+            textDoldur.TextEnter(txtGuvenlik, Localization.kod);
         }
         private void txtGuvenlik_Leave(object sender, EventArgs e)
         {
-            textDoldur.TextLeave(txtKulAd, Localization.kod);
+            textDoldur.TextLeave(txtGuvenlik, Localization.kod);
         }
         private void txtGuvenlik_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -177,7 +199,7 @@ namespace MiGame
         {
             kontrol.KarakterKontrol(txtSoyad, 0, 2, lblKodUyari);
         }
-                private void txtKulAd_Enter(object sender, EventArgs e)
+        private void txtKulAd_Enter(object sender, EventArgs e)
         {
             textDoldur.TextEnter(txtKulAd, Localization.kullanici);
         }
@@ -228,5 +250,71 @@ namespace MiGame
         {
             btnKayitOl.BackgroundImage = Properties.Resources.buton_giris;
         }
+
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+            if (kontrol.KarakterKontrol(txtAd, 0, 2, lblAdUyari) == false || txtAd.Text == Localization.ad)
+            {
+                if (string.IsNullOrEmpty(txtAd.Text) || txtAd.Text == Localization.ad)
+                {
+                    lblAdUyari.Text = Localization.bos;
+                }
+            }
+            else if (kontrol.KarakterKontrol(txtSoyad, 0, 2, lblSoyadUyari) == false || txtSoyad.Text == Localization.soyad)
+            {
+                if (string.IsNullOrEmpty(txtSoyad.Text) || txtSoyad.Text == Localization.soyad)
+                {
+                    lblSoyadUyari.Text = Localization.bos;
+                }
+            }
+            else if (kontrol.TarihKontrol(cmbGun, lblTarihUyari, Localization.gun) == false)
+            {
+                lblTarihUyari.Text = Localization.gun + " " + Localization.sec;
+            }
+            else if (kontrol.TarihKontrol(cmbAy, lblTarihUyari, Localization.ay) == false)
+            {
+                lblTarihUyari.Text = Localization.ay + " " + Localization.sec;
+            }
+            else if (kontrol.TarihKontrol(cmbYil, lblTarihUyari, Localization.yil) == false)
+            {
+                lblTarihUyari.Text = Localization.yil + " " + Localization.sec;
+            }
+            else if (cmbCinsiyet.SelectedIndex == 0)
+            {
+                lblCinsiyetUyari.Text = Localization.cinsiyet2;
+            }
+            else if (string.IsNullOrEmpty(txtEposta.Text) || txtEposta.Text == Localization.posta)
+            {
+                lblEpostaUyari.Text = Localization.bos;
+            }
+            //else if ()
+            //{
+            //     KOD KONTORL
+            //}
+            else if (kontrol.KarakterKontrol(txtKulAd, 0, 4, lblKuladUyari) == false || txtKulAd.Text == Localization.kullanici)
+            {
+                if (string.IsNullOrEmpty(txtKulAd.Text) || txtKulAd.Text == Localization.kullanici)
+                {
+                    lblKuladUyari.Text = Localization.bos;
+                }
+            }
+            else if (kontrol.KullaniciAdiKontrol(txtKulAd, lblKuladUyari) == false)
+            {
+                lblKuladUyari.Text = Localization.hgir;
+            }
+            else if (kontrol.KarakterKontrol(txtSifre, 0, 8, lblSifreUyari) == false || txtSifre.Text == Localization.pass)
+            {
+                if (string.IsNullOrEmpty(txtSifre.Text) || txtSifre.Text == Localization.pass)
+                {
+                    lblSifreUyari.Text = Localization.bos;
+                }
+            }
+            else if (txtSifre.Text != txtSifreTekrar.Text)
+            {
+                lblSifreUyari.Text = Localization.passes;
+            }
+        }
+
+      
     }
 }

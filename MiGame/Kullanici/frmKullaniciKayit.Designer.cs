@@ -51,6 +51,7 @@
             this.lblKuladUyari = new System.Windows.Forms.Label();
             this.lblSifreUyari = new System.Windows.Forms.Label();
             this.lblSifreTekrarUyari = new System.Windows.Forms.Label();
+            this.btnKod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblKayit
@@ -262,6 +263,7 @@
             this.btnKayitOl.TabIndex = 6;
             this.btnKayitOl.Text = "Kayıt Ol";
             this.btnKayitOl.UseVisualStyleBackColor = false;
+            this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             this.btnKayitOl.MouseLeave += new System.EventHandler(this.btnKayitOl_MouseLeave);
             this.btnKayitOl.MouseHover += new System.EventHandler(this.btnKayitOl_MouseHover);
             // 
@@ -373,6 +375,26 @@
             this.lblSifreTekrarUyari.TabIndex = 7;
             this.lblSifreTekrarUyari.Text = "Boş Geçilemez";
             // 
+            // btnKod
+            // 
+            this.btnKod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKod.BackgroundImage = global::MiGame.Properties.Resources.buton_giris;
+            this.btnKod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKod.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKod.Location = new System.Drawing.Point(397, 326);
+            this.btnKod.Name = "btnKod";
+            this.btnKod.Size = new System.Drawing.Size(68, 31);
+            this.btnKod.TabIndex = 8;
+            this.btnKod.Text = "Kod";
+            this.btnKod.UseVisualStyleBackColor = false;
+            this.btnKod.MouseLeave += new System.EventHandler(this.btnKod_MouseLeave);
+            this.btnKod.MouseHover += new System.EventHandler(this.btnKod_MouseHover);
+            // 
             // frmKullaniciKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +402,7 @@
             this.BackgroundImage = global::MiGame.Properties.Resources.kullanici_giris21;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(470, 650);
+            this.Controls.Add(this.btnKod);
             this.Controls.Add(this.lblSifreTekrarUyari);
             this.Controls.Add(this.lblSifreUyari);
             this.Controls.Add(this.lblKuladUyari);
@@ -440,5 +463,6 @@
         private System.Windows.Forms.Label lblKuladUyari;
         private System.Windows.Forms.Label lblSifreUyari;
         private System.Windows.Forms.Label lblSifreTekrarUyari;
+        private System.Windows.Forms.Button btnKod;
     }
 }
