@@ -79,5 +79,20 @@ namespace MiGame
         {
             Application.Exit();
         }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+
+            Firma firma = new Firma();
+            FirmaYonetici firmaYonetici = new FirmaYonetici();
+
+            firma.getFirmaEposta = txtEposta.Text;
+            firma.getFirmaSifre = txtSifre.Text;
+
+            if (firmaYonetici.Giris(firma) == true)
+            {
+               
+            }
+        }
     }
 }

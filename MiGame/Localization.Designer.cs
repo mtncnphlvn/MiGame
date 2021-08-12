@@ -268,6 +268,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Firma sistemde kayıtlı.
+        /// </summary>
+        internal static string firmaKayitli {
+            get {
+                return ResourceManager.GetString("firmaKayitli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Giriş.
         /// </summary>
         internal static string g1 {
@@ -304,6 +313,24 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Giriş Başarılı.
+        /// </summary>
+        internal static string gbasari {
+            get {
+                return ResourceManager.GetString("gbasari", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giriş Başarısız.
+        /// </summary>
+        internal static string gbasarisiz {
+            get {
+                return ResourceManager.GetString("gbasarisiz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gün.
         /// </summary>
         internal static string gun {
@@ -318,6 +345,15 @@ namespace MiGame {
         internal static string guvenonay {
             get {
                 return ResourceManager.GetString("guvenonay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hata var.
+        /// </summary>
+        internal static string hata {
+            get {
+                return ResourceManager.GetString("hata", resourceCulture);
             }
         }
         
@@ -345,6 +381,24 @@ namespace MiGame {
         internal static string kayit {
             get {
                 return ResourceManager.GetString("kayit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kayıt Başarılı.
+        /// </summary>
+        internal static string kayitbasari {
+            get {
+                return ResourceManager.GetString("kayitbasari", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kayıt Başarısız.
+        /// </summary>
+        internal static string kayitbasarisiz {
+            get {
+                return ResourceManager.GetString("kayitbasarisiz", resourceCulture);
             }
         }
         
@@ -381,6 +435,15 @@ namespace MiGame {
         internal static string kodhata {
             get {
                 return ResourceManager.GetString("kodhata", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kullanıcı sistemde kayıtlı.
+        /// </summary>
+        internal static string kulkayit {
+            get {
+                return ResourceManager.GetString("kulkayit", resourceCulture);
             }
         }
         

@@ -35,6 +35,8 @@
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.btnGiris = new System.Windows.Forms.Button();
             this.btnCarpi = new System.Windows.Forms.Button();
+            this.lblEpostaUyari = new System.Windows.Forms.Label();
+            this.lblSifreUyari = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblGiris
@@ -113,6 +115,7 @@
             this.btnGiris.TabIndex = 5;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             this.btnGiris.MouseLeave += new System.EventHandler(this.btnGiris_MouseLeave);
             this.btnGiris.MouseHover += new System.EventHandler(this.btnGiris_MouseHover);
             // 
@@ -134,6 +137,30 @@
             this.btnCarpi.MouseLeave += new System.EventHandler(this.btnCarpi_MouseLeave);
             this.btnCarpi.MouseHover += new System.EventHandler(this.btnCarpi_MouseHover);
             // 
+            // lblEpostaUyari
+            // 
+            this.lblEpostaUyari.AutoSize = true;
+            this.lblEpostaUyari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.lblEpostaUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEpostaUyari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
+            this.lblEpostaUyari.Location = new System.Drawing.Point(161, 200);
+            this.lblEpostaUyari.Name = "lblEpostaUyari";
+            this.lblEpostaUyari.Size = new System.Drawing.Size(102, 17);
+            this.lblEpostaUyari.TabIndex = 8;
+            this.lblEpostaUyari.Text = "Boş Geçilemez";
+            // 
+            // lblSifreUyari
+            // 
+            this.lblSifreUyari.AutoSize = true;
+            this.lblSifreUyari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.lblSifreUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSifreUyari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
+            this.lblSifreUyari.Location = new System.Drawing.Point(161, 287);
+            this.lblSifreUyari.Name = "lblSifreUyari";
+            this.lblSifreUyari.Size = new System.Drawing.Size(102, 17);
+            this.lblSifreUyari.TabIndex = 8;
+            this.lblSifreUyari.Text = "Boş Geçilemez";
+            // 
             // frmKullaniciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +168,8 @@
             this.BackgroundImage = global::MiGame.Properties.Resources.kullanici_giris2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 461);
+            this.Controls.Add(this.lblSifreUyari);
+            this.Controls.Add(this.lblEpostaUyari);
             this.Controls.Add(this.btnCarpi);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.txtSifre);
@@ -170,5 +199,7 @@
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Button btnCarpi;
+        private System.Windows.Forms.Label lblEpostaUyari;
+        private System.Windows.Forms.Label lblSifreUyari;
     }
 }

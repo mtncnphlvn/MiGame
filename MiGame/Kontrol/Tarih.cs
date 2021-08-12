@@ -145,16 +145,16 @@ namespace MiGame
 
             switch (ay)
             {
-                case "January ":
+                case "January":
                     aySayi = "01";
                     break;
-                case "February ":
+                case "February":
                     aySayi = "02";
                     break;
-                case "March ":
+                case "March":
                     aySayi = "03";
                     break;
-                case "April ":
+                case "April":
                     aySayi = "04";
                     break;
                 case "May":

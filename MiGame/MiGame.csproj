@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.26\Assemblies\netstandard2.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Firma Class\Firma.cs" />
+    <Compile Include="Firma Class\FirmaYonetici.cs" />
     <Compile Include="frmDil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,8 @@
       <DependentUpon>frmFirmaGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
+    <Compile Include="Kullanici.cs" />
+    <Compile Include="KullaniciYonetici.cs" />
     <Compile Include="Kullanici\frmKullaniciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +104,8 @@
     </Compile>
     <Compile Include="Kontrol\Tarih.cs" />
     <Compile Include="Kontrol\TextDoldur.cs" />
+    <Compile Include="Veritabani\Veritabani.cs" />
+    <Compile Include="Veritabani\VeritabaniYonetici.cs" />
     <EmbeddedResource Include="Firma\frmFirmaGiris.resx">
       <DependentUpon>frmFirmaGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,5 +180,6 @@
   <ItemGroup>
     <None Include="Resources\firma_kayit.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -186,6 +186,9 @@
   <data name="fad" xml:space="preserve">
     <value>Company Name</value>
   </data>
+  <data name="firmaKayitli" xml:space="preserve">
+    <value>Company registered in the system</value>
+  </data>
   <data name="g1" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -198,11 +201,20 @@
   <data name="g4" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="gbasari" xml:space="preserve">
+    <value>Login successful</value>
+  </data>
+  <data name="gbasarisiz" xml:space="preserve">
+    <value>Login Failed</value>
+  </data>
   <data name="gun" xml:space="preserve">
     <value>Day</value>
   </data>
   <data name="guvenonay" xml:space="preserve">
     <value>Security Approval</value>
+  </data>
+  <data name="hata" xml:space="preserve">
+    <value>There is an error</value>
   </data>
   <data name="hgir" xml:space="preserve">
     <value>Enter Letters</value>
@@ -212,6 +224,12 @@
   </data>
   <data name="kayit" xml:space="preserve">
     <value>Register</value>
+  </data>
+  <data name="kayitbasari" xml:space="preserve">
+    <value>Registration Successful</value>
+  </data>
+  <data name="kayitbasarisiz" xml:space="preserve">
+    <value>Registration Failed</value>
   </data>
   <data name="kod" xml:space="preserve">
     <value>Security Code</value>
@@ -224,6 +242,9 @@
   </data>
   <data name="kodhata" xml:space="preserve">
     <value>Code is wrong</value>
+  </data>
+  <data name="kulkayit" xml:space="preserve">
+    <value>User registered in the system</value>
   </data>
   <data name="kullanici" xml:space="preserve">
     <value>Username</value>

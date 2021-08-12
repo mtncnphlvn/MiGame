@@ -332,10 +332,10 @@ namespace MiGame
             {
                 lblKodUyari.Text = Localization.bos;
             }
-            else if (txtGuvenlik.Text != onayKodu)
-            {
-                lblKodUyari.Text = Localization.kodhata;
-            }
+            //else if (txtGuvenlik.Text != onayKodu)
+            //{
+            //    lblKodUyari.Text = Localization.kodhata;
+            //}
             else if (kontrol.KarakterKontrol(txtKulAd, 0, 4, lblKuladUyari) == false || txtKulAd.Text == Localization.kullanici)
             {
                 if (string.IsNullOrEmpty(txtKulAd.Text) || txtKulAd.Text == Localization.kullanici)
@@ -360,7 +360,38 @@ namespace MiGame
             }
             else
             {
-                //------------------------------------------------------------------------
+                string dTarih;
+                if (Settings.Default.dil == "English")
+                {
+                    Localization.Culture = new CultureInfo("en-US");
+                    dTarih = cmbYil.SelectedItem.ToString() + "-" + tarih.AyCevirmeEn(cmbAy.SelectedItem.ToString()) + "-" + tarih.GunCevirme(cmbGun.SelectedItem.ToString());
+                }
+                else
+                {
+                    dTarih = cmbYil.SelectedItem.ToString() + "-" + tarih.AyCevirme(cmbAy.SelectedItem.ToString()) + "-" + tarih.GunCevirme(cmbGun.SelectedItem.ToString());
+                }
+
+                Console.WriteLine(dTarih);
+                Kullanici kullanici = new Kullanici();
+                KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+                kullanici.getKullaniciAdi = txtAd.Text;
+                kullanici.getKullaniciSoyadi = txtSoyad.Text;
+                kullanici.getKullaniciDogumTarih = dTarih;
+                kullanici.getKullaniciCinsiyet = cmbCinsiyet.SelectedItem.ToString();        
+                kullanici.getKullaniciEposta = txtEposta.Text;
+                kullanici.getKullaniciKulAdi = txtKulAd.Text;
+                kullanici.getKullaniciSifre = txtSifre.Text;
+
+                if (kullaniciYonetici.HesapKontrol(kullanici) == true)
+                {
+                    if (kullaniciYonetici.KayitOl(kullanici) == true)
+                    {
+                    if (kullaniciYonetici.Giris(kullanici) == true)
+                    {
+
+                    }
+                }
+                }
             }
         }
 

@@ -186,6 +186,9 @@
   <data name="fad" xml:space="preserve">
     <value>Firma Ad</value>
   </data>
+  <data name="firmaKayitli" xml:space="preserve">
+    <value>Firma sistemde kayıtlı</value>
+  </data>
   <data name="g1" xml:space="preserve">
     <value>Giriş</value>
   </data>
@@ -198,11 +201,20 @@
   <data name="g4" xml:space="preserve">
     <value>Giriş</value>
   </data>
+  <data name="gbasari" xml:space="preserve">
+    <value>Giriş Başarılı</value>
+  </data>
+  <data name="gbasarisiz" xml:space="preserve">
+    <value>Giriş Başarısız</value>
+  </data>
   <data name="gun" xml:space="preserve">
     <value>Gün</value>
   </data>
   <data name="guvenonay" xml:space="preserve">
     <value>Güvenlik Onayı</value>
+  </data>
+  <data name="hata" xml:space="preserve">
+    <value>Hata var</value>
   </data>
   <data name="hgir" xml:space="preserve">
     <value>Harf Giriniz</value>
@@ -212,6 +224,12 @@
   </data>
   <data name="kayit" xml:space="preserve">
     <value>Kayıt Ol</value>
+  </data>
+  <data name="kayitbasari" xml:space="preserve">
+    <value>Kayıt Başarılı</value>
+  </data>
+  <data name="kayitbasarisiz" xml:space="preserve">
+    <value>Kayıt Başarısız</value>
   </data>
   <data name="kod" xml:space="preserve">
     <value>Güvenlik Kodu</value>
@@ -224,6 +242,9 @@
   </data>
   <data name="kodhata" xml:space="preserve">
     <value>Kod Hatalı</value>
+  </data>
+  <data name="kulkayit" xml:space="preserve">
+    <value>Kullanıcı sistemde kayıtlı</value>
   </data>
   <data name="kullanici" xml:space="preserve">
     <value>Kullanıcı Adı</value>

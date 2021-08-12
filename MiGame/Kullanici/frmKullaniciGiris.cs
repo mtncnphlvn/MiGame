@@ -79,8 +79,37 @@ namespace MiGame
 
         private void frmKullaniciGiris_Load(object sender, EventArgs e)
         {
-            yazdir();            
+            yazdir();
+            lblEpostaUyari.Text = "";
+            lblSifreUyari.Text = "";
         }
-      
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtEposta.Text))
+            {
+                lblEpostaUyari.Text = Localization.bos;
+            }
+            else if (!string.IsNullOrEmpty(txtEposta.Text))
+            {
+                lblEpostaUyari.Text = "";
+            }
+            else if (string.IsNullOrEmpty(txtSifre.Text))
+            {
+                lblSifreUyari.Text = Localization.bos;
+            }
+            else
+            {
+                Kullanici kullanici = new Kullanici();
+                KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+                kullanici.getKullaniciEposta = txtEposta.Text;
+                kullanici.getKullaniciSifre = txtSifre.Text;
+
+                if (kullaniciYonetici.Giris(kullanici) == true)
+                {
+
+                }
+            }
+        }
     }
 }

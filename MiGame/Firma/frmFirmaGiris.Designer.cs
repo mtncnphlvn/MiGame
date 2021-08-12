@@ -66,6 +66,7 @@
             this.btnGiris.TabIndex = 6;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             this.btnGiris.MouseLeave += new System.EventHandler(this.btnGiris_MouseLeave);
             this.btnGiris.MouseHover += new System.EventHandler(this.btnGiris_MouseHover);
             // 
