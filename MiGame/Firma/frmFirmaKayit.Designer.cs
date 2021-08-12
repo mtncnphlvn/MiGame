@@ -309,6 +309,7 @@
             this.Controls.Add(this.lblKayit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFirmaKayit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmFirmaKayit";
             this.Load += new System.EventHandler(this.frmFirmaKayit_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmFirmaKayit_MouseDown);

@@ -58,6 +58,12 @@
     <Compile Include="Firma\frmFirmaKayit.Designer.cs">
       <DependentUpon>frmFirmaKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Firma\frmFirmaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaGiris.Designer.cs">
+      <DependentUpon>frmFirmaGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
     <Compile Include="Kullanici\frmKullaniciKayit.cs">
       <SubType>Form</SubType>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Kontrol\Tarih.cs" />
     <Compile Include="Kontrol\TextDoldur.cs" />
+    <EmbeddedResource Include="Firma\frmFirmaGiris.resx">
+      <DependentUpon>frmFirmaGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Firma\frmFirmaKayit.resx">
       <DependentUpon>frmFirmaKayit.cs</DependentUpon>
     </EmbeddedResource>
