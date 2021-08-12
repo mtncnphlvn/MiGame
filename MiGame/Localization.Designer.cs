@@ -295,6 +295,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Güvenlik Onayı.
+        /// </summary>
+        internal static string guvenonay {
+            get {
+                return ResourceManager.GetString("guvenonay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Harf Giriniz.
         /// </summary>
         internal static string hgir {
@@ -336,6 +345,24 @@ namespace MiGame {
         internal static string kod2 {
             get {
                 return ResourceManager.GetString("kod2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kod Gönderildi.
+        /// </summary>
+        internal static string kod3 {
+            get {
+                return ResourceManager.GetString("kod3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kod Hatalı.
+        /// </summary>
+        internal static string kodhata {
+            get {
+                return ResourceManager.GetString("kodhata", resourceCulture);
             }
         }
         
@@ -390,6 +417,15 @@ namespace MiGame {
         internal static string sec {
             get {
                 return ResourceManager.GetString("sec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sevgili.
+        /// </summary>
+        internal static string sev {
+            get {
+                return ResourceManager.GetString("sev", resourceCulture);
             }
         }
         

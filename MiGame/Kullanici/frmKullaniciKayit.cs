@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -250,6 +252,45 @@ namespace MiGame
         {
             btnKayitOl.BackgroundImage = Properties.Resources.buton_giris;
         }
+        Random rnd = new Random();
+        string onayKodu;
+        private void btnKod_Click(object sender, EventArgs e)
+        {
+            en();
+            if (string.IsNullOrEmpty(txtEposta.Text) || txtEposta.Text == Localization.posta)
+            {
+                lblEpostaUyari.Text = Localization.bos;
+            }
+            else if (kontrol.KarakterKontrol(txtKulAd, 0, 4, lblKuladUyari) == false || txtKulAd.Text == Localization.kullanici)
+            {
+                if (string.IsNullOrEmpty(txtKulAd.Text) || txtKulAd.Text == Localization.kullanici)
+                {
+                    lblKuladUyari.Text = Localization.bos;
+                }
+            }
+            else if (kontrol.KullaniciAdiKontrol(txtKulAd, lblKuladUyari) == false)
+            {
+                lblKuladUyari.Text = Localization.hgir;
+            }
+            else
+            {
+                onayKodu = rnd.Next(100, 999).ToString();
+                MailMessage mesajim = new MailMessage();
+                SmtpClient istemci = new SmtpClient();
+                istemci.Credentials = new NetworkCredential("stajproje@hotmail.com", "qweasdzxc123");
+                istemci.Port = 587;
+                istemci.Host = "smtp.live.com";
+                istemci.EnableSsl = true;
+                mesajim.To.Add(txtEposta.Text);
+                mesajim.From = new MailAddress("stajproje@hotmail.com");
+                mesajim.Subject = Localization.guvenonay;
+                mesajim.Body = Localization.sev + " " + txtKulAd.Text + " " + Localization.kod + " : " + onayKodu;
+                istemci.Send(mesajim);
+                lblKodUyari.Text = Localization.kod3;
+
+            }
+           
+        }
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
@@ -287,10 +328,14 @@ namespace MiGame
             {
                 lblEpostaUyari.Text = Localization.bos;
             }
-            //else if ()
-            //{
-            //     KOD KONTORL
-            //}
+            else if (string.IsNullOrEmpty(txtGuvenlik.Text) || txtGuvenlik.Text == Localization.kod)
+            {
+                lblKodUyari.Text = Localization.bos;
+            }
+            else if (txtGuvenlik.Text != onayKodu)
+            {
+                lblKodUyari.Text = Localization.kodhata;
+            }
             else if (kontrol.KarakterKontrol(txtKulAd, 0, 4, lblKuladUyari) == false || txtKulAd.Text == Localization.kullanici)
             {
                 if (string.IsNullOrEmpty(txtKulAd.Text) || txtKulAd.Text == Localization.kullanici)

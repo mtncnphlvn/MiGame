@@ -392,6 +392,7 @@
             this.btnKod.TabIndex = 8;
             this.btnKod.Text = "Kod";
             this.btnKod.UseVisualStyleBackColor = false;
+            this.btnKod.Click += new System.EventHandler(this.btnKod_Click);
             this.btnKod.MouseLeave += new System.EventHandler(this.btnKod_MouseLeave);
             this.btnKod.MouseHover += new System.EventHandler(this.btnKod_MouseHover);
             // 

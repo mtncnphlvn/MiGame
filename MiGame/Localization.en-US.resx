@@ -195,6 +195,9 @@
   <data name="gun" xml:space="preserve">
     <value>Day</value>
   </data>
+  <data name="guvenonay" xml:space="preserve">
+    <value>Security Approval</value>
+  </data>
   <data name="hgir" xml:space="preserve">
     <value>Enter Letters</value>
   </data>
@@ -209,6 +212,12 @@
   </data>
   <data name="kod2" xml:space="preserve">
     <value>Code</value>
+  </data>
+  <data name="kod3" xml:space="preserve">
+    <value>Code Sent</value>
+  </data>
+  <data name="kodhata" xml:space="preserve">
+    <value>Code is wrong</value>
   </data>
   <data name="kullanici" xml:space="preserve">
     <value>Username</value>
@@ -227,6 +236,9 @@
   </data>
   <data name="sec" xml:space="preserve">
     <value>choose</value>
+  </data>
+  <data name="sev" xml:space="preserve">
+    <value>Dear</value>
   </data>
   <data name="soyad" xml:space="preserve">
     <value>Surname</value>
