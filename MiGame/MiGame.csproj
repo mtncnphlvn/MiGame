@@ -52,7 +52,13 @@
     <Compile Include="frmDil.Designer.cs">
       <DependentUpon>frmDil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kontrol.cs" />
+    <Compile Include="Firma\frmFirmaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaKayit.Designer.cs">
+      <DependentUpon>frmFirmaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrol\Kontrol.cs" />
     <Compile Include="Kullanici\frmKullaniciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +88,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Tarih.cs" />
-    <Compile Include="TextDoldur.cs" />
+    <Compile Include="Kontrol\Tarih.cs" />
+    <Compile Include="Kontrol\TextDoldur.cs" />
+    <EmbeddedResource Include="Firma\frmFirmaKayit.resx">
+      <DependentUpon>frmFirmaKayit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDil.resx">
       <DependentUpon>frmDil.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kullanici_giris21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firma_kayit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

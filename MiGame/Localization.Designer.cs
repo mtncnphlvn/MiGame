@@ -196,6 +196,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ceo.
+        /// </summary>
+        internal static string ceo {
+            get {
+                return ResourceManager.GetString("ceo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cinsiyet Seçiniz.....
         /// </summary>
         internal static string cinsiyet {
@@ -246,6 +255,15 @@ namespace MiGame {
         internal static string erkek {
             get {
                 return ResourceManager.GetString("erkek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Firma Ad.
+        /// </summary>
+        internal static string fad {
+            get {
+                return ResourceManager.GetString("fad", resourceCulture);
             }
         }
         

@@ -103,6 +103,16 @@ namespace MiGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap firma_kayit {
+            get {
+                object obj = ResourceManager.GetObject("firma_kayit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kullanici_giris2 {
             get {
                 object obj = ResourceManager.GetObject("kullanici_giris2", resourceCulture);

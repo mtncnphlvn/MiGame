@@ -199,7 +199,7 @@ namespace MiGame
         }
         private void txtGuvenlik_TextChanged(object sender, EventArgs e)
         {
-            kontrol.KarakterKontrol(txtSoyad, 0, 2, lblKodUyari);
+            kontrol.KarakterKontrol(txtGuvenlik, 0, 2, lblKodUyari);
         }
         private void txtKulAd_Enter(object sender, EventArgs e)
         {
@@ -357,6 +357,10 @@ namespace MiGame
             else if (txtSifre.Text != txtSifreTekrar.Text)
             {
                 lblSifreUyari.Text = Localization.passes;
+            }
+            else
+            {
+                //------------------------------------------------------------------------
             }
         }
 

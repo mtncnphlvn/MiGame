@@ -386,7 +386,7 @@
             this.btnKod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKod.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnKod.Location = new System.Drawing.Point(397, 326);
+            this.btnKod.Location = new System.Drawing.Point(399, 375);
             this.btnKod.Name = "btnKod";
             this.btnKod.Size = new System.Drawing.Size(68, 31);
             this.btnKod.TabIndex = 8;

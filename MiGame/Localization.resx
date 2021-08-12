@@ -162,6 +162,9 @@
   <data name="bos" xml:space="preserve">
     <value>Boş Bırakılamaz !</value>
   </data>
+  <data name="ceo" xml:space="preserve">
+    <value>Ceo</value>
+  </data>
   <data name="cinsiyet" xml:space="preserve">
     <value>Cinsiyet Seçiniz....</value>
   </data>
@@ -179,6 +182,9 @@
   </data>
   <data name="erkek" xml:space="preserve">
     <value>Erkek</value>
+  </data>
+  <data name="fad" xml:space="preserve">
+    <value>Firma Ad</value>
   </data>
   <data name="g1" xml:space="preserve">
     <value>Giriş</value>
