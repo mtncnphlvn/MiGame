@@ -71,8 +71,8 @@
       <DependentUpon>frmFirmaGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
-    <Compile Include="Kullanici.cs" />
-    <Compile Include="KullaniciYonetici.cs" />
+    <Compile Include="Kullanici Class\Kullanici.cs" />
+    <Compile Include="Kullanici Class\KullaniciYonetici.cs" />
     <Compile Include="Kullanici\frmKullaniciKayit.cs">
       <SubType>Form</SubType>
     </Compile>

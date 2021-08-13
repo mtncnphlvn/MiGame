@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.lblGiris = new System.Windows.Forms.Label();
-            this.lblEposta = new System.Windows.Forms.Label();
-            this.lblSifre = new System.Windows.Forms.Label();
             this.txtEposta = new System.Windows.Forms.TextBox();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.btnGiris = new System.Windows.Forms.Button();
@@ -48,32 +46,8 @@
             this.lblGiris.Location = new System.Drawing.Point(135, 18);
             this.lblGiris.Name = "lblGiris";
             this.lblGiris.Size = new System.Drawing.Size(151, 74);
-            this.lblGiris.TabIndex = 0;
+            this.lblGiris.TabIndex = 2;
             this.lblGiris.Text = "Giriş";
-            // 
-            // lblEposta
-            // 
-            this.lblEposta.AutoSize = true;
-            this.lblEposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.lblEposta.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEposta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblEposta.Location = new System.Drawing.Point(73, 139);
-            this.lblEposta.Name = "lblEposta";
-            this.lblEposta.Size = new System.Drawing.Size(107, 29);
-            this.lblEposta.TabIndex = 1;
-            this.lblEposta.Text = "E-Posta :";
-            // 
-            // lblSifre
-            // 
-            this.lblSifre.AutoSize = true;
-            this.lblSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.lblSifre.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblSifre.Location = new System.Drawing.Point(68, 227);
-            this.lblSifre.Name = "lblSifre";
-            this.lblSifre.Size = new System.Drawing.Size(82, 29);
-            this.lblSifre.TabIndex = 2;
-            this.lblSifre.Text = "Şifre :";
             // 
             // txtEposta
             // 
@@ -84,7 +58,11 @@
             this.txtEposta.Location = new System.Drawing.Point(76, 174);
             this.txtEposta.Name = "txtEposta";
             this.txtEposta.Size = new System.Drawing.Size(281, 23);
-            this.txtEposta.TabIndex = 3;
+            this.txtEposta.TabIndex = 10;
+            this.txtEposta.Text = "E-Posta";
+            this.txtEposta.TextChanged += new System.EventHandler(this.txtEposta_TextChanged_1);
+            this.txtEposta.Enter += new System.EventHandler(this.txtEposta_Enter);
+            this.txtEposta.Leave += new System.EventHandler(this.txtEposta_Leave);
             // 
             // txtSifre
             // 
@@ -94,9 +72,12 @@
             this.txtSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
             this.txtSifre.Location = new System.Drawing.Point(78, 261);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(281, 23);
             this.txtSifre.TabIndex = 4;
+            this.txtSifre.Text = "Şifre";
+            this.txtSifre.TextChanged += new System.EventHandler(this.txtSifre_TextChanged);
+            this.txtSifre.Enter += new System.EventHandler(this.txtSifre_Enter);
+            this.txtSifre.Leave += new System.EventHandler(this.txtSifre_Leave);
             // 
             // btnGiris
             // 
@@ -131,7 +112,7 @@
             this.btnCarpi.Location = new System.Drawing.Point(402, 12);
             this.btnCarpi.Name = "btnCarpi";
             this.btnCarpi.Size = new System.Drawing.Size(20, 20);
-            this.btnCarpi.TabIndex = 6;
+            this.btnCarpi.TabIndex = 0;
             this.btnCarpi.UseVisualStyleBackColor = false;
             this.btnCarpi.Click += new System.EventHandler(this.btnCarpi_Click);
             this.btnCarpi.MouseLeave += new System.EventHandler(this.btnCarpi_MouseLeave);
@@ -174,8 +155,6 @@
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtEposta);
-            this.Controls.Add(this.lblSifre);
-            this.Controls.Add(this.lblEposta);
             this.Controls.Add(this.lblGiris);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmKullaniciGiris";
@@ -193,8 +172,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblGiris;
-        private System.Windows.Forms.Label lblEposta;
-        private System.Windows.Forms.Label lblSifre;
         private System.Windows.Forms.TextBox txtEposta;
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Button btnGiris;

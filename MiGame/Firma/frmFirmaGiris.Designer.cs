@@ -31,10 +31,10 @@
             this.lblGiris = new System.Windows.Forms.Label();
             this.btnGiris = new System.Windows.Forms.Button();
             this.btnCarpi = new System.Windows.Forms.Button();
-            this.lblEposta = new System.Windows.Forms.Label();
-            this.lblSifre = new System.Windows.Forms.Label();
             this.txtEposta = new System.Windows.Forms.TextBox();
             this.txtSifre = new System.Windows.Forms.TextBox();
+            this.lblEpostaUyari = new System.Windows.Forms.Label();
+            this.lblSifreUyari = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblGiris
@@ -88,30 +88,6 @@
             this.btnCarpi.Leave += new System.EventHandler(this.btnCarpi_Leave);
             this.btnCarpi.MouseHover += new System.EventHandler(this.btnCarpi_MouseHover);
             // 
-            // lblEposta
-            // 
-            this.lblEposta.AutoSize = true;
-            this.lblEposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.lblEposta.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEposta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblEposta.Location = new System.Drawing.Point(68, 136);
-            this.lblEposta.Name = "lblEposta";
-            this.lblEposta.Size = new System.Drawing.Size(107, 29);
-            this.lblEposta.TabIndex = 8;
-            this.lblEposta.Text = "E-Posta :";
-            // 
-            // lblSifre
-            // 
-            this.lblSifre.AutoSize = true;
-            this.lblSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.lblSifre.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblSifre.Location = new System.Drawing.Point(68, 224);
-            this.lblSifre.Name = "lblSifre";
-            this.lblSifre.Size = new System.Drawing.Size(82, 29);
-            this.lblSifre.TabIndex = 9;
-            this.lblSifre.Text = "Şifre :";
-            // 
             // txtEposta
             // 
             this.txtEposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
@@ -122,6 +98,9 @@
             this.txtEposta.Name = "txtEposta";
             this.txtEposta.Size = new System.Drawing.Size(281, 23);
             this.txtEposta.TabIndex = 10;
+            this.txtEposta.TextChanged += new System.EventHandler(this.txtEposta_TextChanged);
+            this.txtEposta.Enter += new System.EventHandler(this.txtEposta_Enter);
+            this.txtEposta.Leave += new System.EventHandler(this.txtEposta_Leave);
             // 
             // txtSifre
             // 
@@ -131,9 +110,35 @@
             this.txtSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
             this.txtSifre.Location = new System.Drawing.Point(73, 261);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(281, 23);
             this.txtSifre.TabIndex = 11;
+            this.txtSifre.TextChanged += new System.EventHandler(this.txtSifre_TextChanged);
+            this.txtSifre.Enter += new System.EventHandler(this.txtSifre_Enter);
+            this.txtSifre.Leave += new System.EventHandler(this.txtSifre_Leave);
+            // 
+            // lblEpostaUyari
+            // 
+            this.lblEpostaUyari.AutoSize = true;
+            this.lblEpostaUyari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.lblEpostaUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEpostaUyari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
+            this.lblEpostaUyari.Location = new System.Drawing.Point(162, 201);
+            this.lblEpostaUyari.Name = "lblEpostaUyari";
+            this.lblEpostaUyari.Size = new System.Drawing.Size(102, 17);
+            this.lblEpostaUyari.TabIndex = 12;
+            this.lblEpostaUyari.Text = "Boş Geçilemez";
+            // 
+            // lblSifreUyari
+            // 
+            this.lblSifreUyari.AutoSize = true;
+            this.lblSifreUyari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.lblSifreUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSifreUyari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
+            this.lblSifreUyari.Location = new System.Drawing.Point(162, 287);
+            this.lblSifreUyari.Name = "lblSifreUyari";
+            this.lblSifreUyari.Size = new System.Drawing.Size(102, 17);
+            this.lblSifreUyari.TabIndex = 12;
+            this.lblSifreUyari.Text = "Boş Geçilemez";
             // 
             // frmFirmaGiris
             // 
@@ -142,10 +147,10 @@
             this.BackgroundImage = global::MiGame.Properties.Resources.kullanici_giris2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 461);
+            this.Controls.Add(this.lblSifreUyari);
+            this.Controls.Add(this.lblEpostaUyari);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtEposta);
-            this.Controls.Add(this.lblSifre);
-            this.Controls.Add(this.lblEposta);
             this.Controls.Add(this.btnCarpi);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.lblGiris);
@@ -167,9 +172,9 @@
         private System.Windows.Forms.Label lblGiris;
         private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Button btnCarpi;
-        private System.Windows.Forms.Label lblEposta;
-        private System.Windows.Forms.Label lblSifre;
         private System.Windows.Forms.TextBox txtEposta;
         private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.Label lblEpostaUyari;
+        private System.Windows.Forms.Label lblSifreUyari;
     }
 }

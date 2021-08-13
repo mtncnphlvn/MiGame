@@ -44,10 +44,12 @@ namespace MiGame
             {
                 Localization.Culture = new CultureInfo("en-US");
             }
-            lblGiris.Text = Localization.g1;
-            lblEposta.Text = Localization.g2;
-            lblSifre.Text = Localization.g3;
+            lblGiris.Text = Localization.g1;        
             btnGiris.Text = Localization.g4;
+            txtEposta.Text = Localization.posta;
+            txtSifre.Text = Localization.g3;
+            lblEpostaUyari.Text = "";
+            lblSifreUyari.Text = "";
         }
 
         private void btnGiris_MouseHover(object sender, EventArgs e)
@@ -86,15 +88,11 @@ namespace MiGame
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtEposta.Text))
+            if (string.IsNullOrEmpty(txtEposta.Text) || txtEposta.Text == Localization.posta)
             {
                 lblEpostaUyari.Text = Localization.bos;
             }
-            else if (!string.IsNullOrEmpty(txtEposta.Text))
-            {
-                lblEpostaUyari.Text = "";
-            }
-            else if (string.IsNullOrEmpty(txtSifre.Text))
+            else if (string.IsNullOrEmpty(txtSifre.Text) || txtSifre.Text == Localization.g3)
             {
                 lblSifreUyari.Text = Localization.bos;
             }
@@ -110,6 +108,44 @@ namespace MiGame
 
                 }
             }
+        }
+        Kontrol kontrol = new Kontrol();
+        TextDoldur textDoldur = new TextDoldur();
+
+        private void txtEposta_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.Giris(txtEposta, lblEpostaUyari, "");
+        }
+
+        private void txtEposta_Enter(object sender, EventArgs e)
+        {
+            textDoldur.TextEnter(txtEposta, Localization.posta);
+        }
+
+        private void txtEposta_Leave(object sender, EventArgs e)
+        {
+            textDoldur.TextLeave(txtEposta, Localization.posta);
+        }
+
+        private void txtEposta_TextChanged_1(object sender, EventArgs e)
+        {
+            kontrol.Giris(txtEposta, lblEpostaUyari, Localization.posta);
+
+        }
+
+        private void txtSifre_Enter(object sender, EventArgs e)
+        {
+            textDoldur.SifreEnter(txtSifre, Localization.g3);
+        }
+
+        private void txtSifre_Leave(object sender, EventArgs e)
+        {
+            textDoldur.SifreLeave(txtSifre, Localization.g3);
+        }
+
+        private void txtSifre_TextChanged(object sender, EventArgs e)
+        {
+            kontrol.Giris(txtSifre, lblSifreUyari, Localization.g3);
         }
     }
 }

@@ -295,7 +295,7 @@ namespace MiGame {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Şifre :.
+        ///   Looks up a localized string similar to Şifre.
         /// </summary>
         internal static string g3 {
             get {
