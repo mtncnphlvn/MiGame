@@ -100,6 +100,48 @@
     <Compile Include="Firma\frmFirmaProfil.Designer.cs">
       <DependentUpon>frmFirmaProfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciAnasayfa.Designer.cs">
+      <DependentUpon>frmKullaniciAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGoruslerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGoruslerim.Designer.cs">
+      <DependentUpon>frmKullaniciGoruslerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKutuphane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKutuphane.Designer.cs">
+      <DependentUpon>frmKullaniciKutuphane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciOyunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciOyunListele.Designer.cs">
+      <DependentUpon>frmKullaniciOyunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciProfil.Designer.cs">
+      <DependentUpon>frmKullaniciProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciPuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciPuan.Designer.cs">
+      <DependentUpon>frmKullaniciPuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciYorum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciYorum.Designer.cs">
+      <DependentUpon>frmKullaniciYorum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
     <Compile Include="Kullanici Class\Kullanici.cs" />
     <Compile Include="Kullanici Class\KullaniciYonetici.cs" />
@@ -160,11 +202,26 @@
     <EmbeddedResource Include="Firma\frmFirmaProfil.resx">
       <DependentUpon>frmFirmaProfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciAnasayfa.resx">
+      <DependentUpon>frmKullaniciAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\frmKullaniciGiris.resx">
       <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciGoruslerim.resx">
+      <DependentUpon>frmKullaniciGoruslerim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\frmKullaniciKayit.resx">
       <DependentUpon>frmKullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciKutuphane.resx">
+      <DependentUpon>frmKullaniciKutuphane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciOyunListele.resx">
+      <DependentUpon>frmKullaniciOyunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciProfil.resx">
+      <DependentUpon>frmKullaniciProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>

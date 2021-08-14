@@ -8,7 +8,7 @@ namespace MiGame
 {
     class Kullanici
     {
-        public static int kullaniciID;
+        public static int kullaniciID =2;
         private string kullaniciAdi;
         private string kullaniciSoyadi;
         private string kullaniciKulAdi;

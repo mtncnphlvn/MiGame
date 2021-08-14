@@ -340,6 +340,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Görüşlerim.
+        /// </summary>
+        internal static string goruslerim {
+            get {
+                return ResourceManager.GetString("goruslerim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gün.
         /// </summary>
         internal static string gun {
@@ -462,6 +471,15 @@ namespace MiGame {
         internal static string kullanici {
             get {
                 return ResourceManager.GetString("kullanici", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kütüphane.
+        /// </summary>
+        internal static string kutuphane {
+            get {
+                return ResourceManager.GetString("kutuphane", resourceCulture);
             }
         }
         

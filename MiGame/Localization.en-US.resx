@@ -210,6 +210,9 @@
   <data name="gbasarisiz" xml:space="preserve">
     <value>Login Failed</value>
   </data>
+  <data name="goruslerim" xml:space="preserve">
+    <value>My Views</value>
+  </data>
   <data name="gun" xml:space="preserve">
     <value>Day</value>
   </data>
@@ -251,6 +254,9 @@
   </data>
   <data name="kullanici" xml:space="preserve">
     <value>Username</value>
+  </data>
+  <data name="kutuphane" xml:space="preserve">
+    <value>Library</value>
   </data>
   <data name="oyunEkle" xml:space="preserve">
     <value>Add Game</value>

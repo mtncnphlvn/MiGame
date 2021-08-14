@@ -1,6 +1,6 @@
 ﻿namespace MiGame
 {
-    partial class frmFirmaAnasayfa
+    partial class frmKullaniciAnasayfa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlSag = new System.Windows.Forms.Panel();
             this.pnlSol = new System.Windows.Forms.Panel();
             this.btnProfil = new System.Windows.Forms.Button();
-            this.btnOyunEkle = new System.Windows.Forms.Button();
-            this.btnOyunlarim = new System.Windows.Forms.Button();
+            this.btnGoruslerim = new System.Windows.Forms.Button();
+            this.btnKutuphane = new System.Windows.Forms.Button();
             this.btnAnasayfa = new System.Windows.Forms.Button();
             this.lblBakiye = new System.Windows.Forms.Label();
             this.lblKulAd = new System.Windows.Forms.Label();
             this.pbResim = new System.Windows.Forms.PictureBox();
+            this.pnlSag = new System.Windows.Forms.Panel();
             this.pnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlSag
-            // 
-            this.pnlSag.BackColor = System.Drawing.Color.Red;
-            this.pnlSag.Location = new System.Drawing.Point(200, 0);
-            this.pnlSag.Name = "pnlSag";
-            this.pnlSag.Size = new System.Drawing.Size(700, 600);
-            this.pnlSag.TabIndex = 1;
             // 
             // pnlSol
             // 
@@ -55,8 +47,8 @@
             this.pnlSol.BackgroundImage = global::MiGame.Properties.Resources.firma_arayuz2;
             this.pnlSol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlSol.Controls.Add(this.btnProfil);
-            this.pnlSol.Controls.Add(this.btnOyunEkle);
-            this.pnlSol.Controls.Add(this.btnOyunlarim);
+            this.pnlSol.Controls.Add(this.btnGoruslerim);
+            this.pnlSol.Controls.Add(this.btnKutuphane);
             this.pnlSol.Controls.Add(this.btnAnasayfa);
             this.pnlSol.Controls.Add(this.lblBakiye);
             this.pnlSol.Controls.Add(this.lblKulAd);
@@ -64,7 +56,7 @@
             this.pnlSol.Location = new System.Drawing.Point(0, 0);
             this.pnlSol.Name = "pnlSol";
             this.pnlSol.Size = new System.Drawing.Size(200, 600);
-            this.pnlSol.TabIndex = 0;
+            this.pnlSol.TabIndex = 1;
             // 
             // btnProfil
             // 
@@ -87,47 +79,47 @@
             this.btnProfil.MouseLeave += new System.EventHandler(this.btnProfil_MouseLeave);
             this.btnProfil.MouseHover += new System.EventHandler(this.btnProfil_MouseHover);
             // 
-            // btnOyunEkle
+            // btnGoruslerim
             // 
-            this.btnOyunEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunEkle.BackgroundImage = global::MiGame.Properties.Resources.arayuz_buton;
-            this.btnOyunEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOyunEkle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunEkle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunEkle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOyunEkle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOyunEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunEkle.Location = new System.Drawing.Point(38, 505);
-            this.btnOyunEkle.Name = "btnOyunEkle";
-            this.btnOyunEkle.Size = new System.Drawing.Size(120, 40);
-            this.btnOyunEkle.TabIndex = 3;
-            this.btnOyunEkle.Text = "Oyun Ekle";
-            this.btnOyunEkle.UseVisualStyleBackColor = false;
-            this.btnOyunEkle.Click += new System.EventHandler(this.btnOyunEkle_Click);
-            this.btnOyunEkle.MouseLeave += new System.EventHandler(this.btnOyunEkle_MouseLeave);
-            this.btnOyunEkle.MouseHover += new System.EventHandler(this.btnOyunEkle_MouseHover);
+            this.btnGoruslerim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnGoruslerim.BackgroundImage = global::MiGame.Properties.Resources.arayuz_buton;
+            this.btnGoruslerim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoruslerim.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnGoruslerim.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnGoruslerim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnGoruslerim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoruslerim.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGoruslerim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnGoruslerim.Location = new System.Drawing.Point(38, 505);
+            this.btnGoruslerim.Name = "btnGoruslerim";
+            this.btnGoruslerim.Size = new System.Drawing.Size(120, 40);
+            this.btnGoruslerim.TabIndex = 3;
+            this.btnGoruslerim.Text = "Görüşlerim";
+            this.btnGoruslerim.UseVisualStyleBackColor = false;
+            this.btnGoruslerim.Click += new System.EventHandler(this.btnGoruslerim_Click);
+            this.btnGoruslerim.MouseLeave += new System.EventHandler(this.btnGoruslerim_MouseLeave);
+            this.btnGoruslerim.MouseHover += new System.EventHandler(this.btnGoruslerim_MouseHover);
             // 
-            // btnOyunlarim
+            // btnKutuphane
             // 
-            this.btnOyunlarim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunlarim.BackgroundImage = global::MiGame.Properties.Resources.arayuz_buton;
-            this.btnOyunlarim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOyunlarim.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunlarim.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunlarim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunlarim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOyunlarim.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOyunlarim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnOyunlarim.Location = new System.Drawing.Point(38, 450);
-            this.btnOyunlarim.Name = "btnOyunlarim";
-            this.btnOyunlarim.Size = new System.Drawing.Size(120, 40);
-            this.btnOyunlarim.TabIndex = 3;
-            this.btnOyunlarim.Text = "Oyunlarım";
-            this.btnOyunlarim.UseVisualStyleBackColor = false;
-            this.btnOyunlarim.Click += new System.EventHandler(this.btnOyunlarim_Click);
-            this.btnOyunlarim.MouseLeave += new System.EventHandler(this.btnOyunlarim_MouseLeave);
-            this.btnOyunlarim.MouseHover += new System.EventHandler(this.btnOyunlarim_MouseHover);
+            this.btnKutuphane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKutuphane.BackgroundImage = global::MiGame.Properties.Resources.arayuz_buton;
+            this.btnKutuphane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKutuphane.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKutuphane.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKutuphane.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKutuphane.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKutuphane.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKutuphane.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnKutuphane.Location = new System.Drawing.Point(38, 450);
+            this.btnKutuphane.Name = "btnKutuphane";
+            this.btnKutuphane.Size = new System.Drawing.Size(120, 40);
+            this.btnKutuphane.TabIndex = 3;
+            this.btnKutuphane.Text = "Kütüphane";
+            this.btnKutuphane.UseVisualStyleBackColor = false;
+            this.btnKutuphane.Click += new System.EventHandler(this.btnKutuphane_Click);
+            this.btnKutuphane.MouseLeave += new System.EventHandler(this.btnKutuphane_MouseLeave);
+            this.btnKutuphane.MouseHover += new System.EventHandler(this.btnKutuphane_MouseHover);
             // 
             // btnAnasayfa
             // 
@@ -169,11 +161,11 @@
             this.lblKulAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
             this.lblKulAd.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKulAd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.lblKulAd.Location = new System.Drawing.Point(44, 258);
+            this.lblKulAd.Location = new System.Drawing.Point(58, 258);
             this.lblKulAd.Name = "lblKulAd";
-            this.lblKulAd.Size = new System.Drawing.Size(81, 23);
+            this.lblKulAd.Size = new System.Drawing.Size(98, 23);
             this.lblKulAd.TabIndex = 2;
-            this.lblKulAd.Text = "Firma Ad";
+            this.lblKulAd.Text = "Kullanıcı adı";
             this.lblKulAd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbResim
@@ -184,7 +176,15 @@
             this.pbResim.TabIndex = 0;
             this.pbResim.TabStop = false;
             // 
-            // frmFirmaAnasayfa
+            // pnlSag
+            // 
+            this.pnlSag.BackColor = System.Drawing.Color.Red;
+            this.pnlSag.Location = new System.Drawing.Point(200, 0);
+            this.pnlSag.Name = "pnlSag";
+            this.pnlSag.Size = new System.Drawing.Size(700, 600);
+            this.pnlSag.TabIndex = 2;
+            // 
+            // frmKullaniciAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,10 +193,10 @@
             this.Controls.Add(this.pnlSol);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.Name = "frmFirmaAnasayfa";
+            this.Name = "frmKullaniciAnasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmFirmaAnasayfa";
-            this.Load += new System.EventHandler(this.frmFirmaAnasayfa_Load);
+            this.Text = "frmKullaniciAnasayfa";
+            this.Load += new System.EventHandler(this.frmKullaniciAnasayfa_Load);
             this.pnlSol.ResumeLayout(false);
             this.pnlSol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
@@ -207,13 +207,13 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlSol;
-        private System.Windows.Forms.Panel pnlSag;
+        private System.Windows.Forms.Button btnProfil;
+        private System.Windows.Forms.Button btnGoruslerim;
+        private System.Windows.Forms.Button btnKutuphane;
+        private System.Windows.Forms.Button btnAnasayfa;
+        private System.Windows.Forms.Label lblBakiye;
         private System.Windows.Forms.Label lblKulAd;
         private System.Windows.Forms.PictureBox pbResim;
-        private System.Windows.Forms.Label lblBakiye;
-        private System.Windows.Forms.Button btnAnasayfa;
-        private System.Windows.Forms.Button btnProfil;
-        private System.Windows.Forms.Button btnOyunEkle;
-        private System.Windows.Forms.Button btnOyunlarim;
+        private System.Windows.Forms.Panel pnlSag;
     }
 }
