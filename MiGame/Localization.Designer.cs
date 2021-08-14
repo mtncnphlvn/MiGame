@@ -70,6 +70,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anasayfa.
+        /// </summary>
+        internal static string anasayfa {
+            get {
+                return ResourceManager.GetString("anasayfa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ay.
         /// </summary>
         internal static string ay {
@@ -457,6 +466,33 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Oyun Ekle.
+        /// </summary>
+        internal static string oyunEkle {
+            get {
+                return ResourceManager.GetString("oyunEkle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oyunlarım.
+        /// </summary>
+        internal static string oyunlarim {
+            get {
+                return ResourceManager.GetString("oyunlarim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ₺.
+        /// </summary>
+        internal static string paraisaret {
+            get {
+                return ResourceManager.GetString("paraisaret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Şifre (En az 8 Haneli).
         /// </summary>
         internal static string pass {
@@ -489,6 +525,15 @@ namespace MiGame {
         internal static string posta {
             get {
                 return ResourceManager.GetString("posta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profil.
+        /// </summary>
+        internal static string profil {
+            get {
+                return ResourceManager.GetString("profil", resourceCulture);
             }
         }
         

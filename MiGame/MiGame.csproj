@@ -70,6 +70,36 @@
     <Compile Include="Firma\frmFirmaGiris.Designer.cs">
       <DependentUpon>frmFirmaGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="Firma\frmFirmaAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaAnasayfa.Designer.cs">
+      <DependentUpon>frmFirmaAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunListele.Designer.cs">
+      <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunEkle.Designer.cs">
+      <DependentUpon>frmFirmaOyunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunlarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunlarim.Designer.cs">
+      <DependentUpon>frmFirmaOyunlarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaProfil.Designer.cs">
+      <DependentUpon>frmFirmaProfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
     <Compile Include="Kullanici Class\Kullanici.cs" />
     <Compile Include="Kullanici Class\KullaniciYonetici.cs" />
@@ -114,6 +144,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDil.resx">
       <DependentUpon>frmDil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaAnasayfa.resx">
+      <DependentUpon>frmFirmaAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaOyunListele.resx">
+      <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaOyunEkle.resx">
+      <DependentUpon>frmFirmaOyunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaOyunlarim.resx">
+      <DependentUpon>frmFirmaOyunlarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaProfil.resx">
+      <DependentUpon>frmFirmaProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\frmKullaniciGiris.resx">
       <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
@@ -180,6 +225,17 @@
   <ItemGroup>
     <None Include="Resources\firma_kayit.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\firma_arayuz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arayuz_buton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arayuz_buton_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firma_arayuz2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

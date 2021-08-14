@@ -120,6 +120,9 @@
   <data name="ad" xml:space="preserve">
     <value>Ad</value>
   </data>
+  <data name="anasayfa" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
   <data name="ay" xml:space="preserve">
     <value>Ay</value>
   </data>
@@ -249,6 +252,15 @@
   <data name="kullanici" xml:space="preserve">
     <value>Kullanıcı Adı</value>
   </data>
+  <data name="oyunEkle" xml:space="preserve">
+    <value>Oyun Ekle</value>
+  </data>
+  <data name="oyunlarim" xml:space="preserve">
+    <value>Oyunlarım</value>
+  </data>
+  <data name="paraisaret" xml:space="preserve">
+    <value>₺</value>
+  </data>
   <data name="pass" xml:space="preserve">
     <value>Şifre (En az 8 Haneli)</value>
   </data>
@@ -260,6 +272,9 @@
   </data>
   <data name="posta" xml:space="preserve">
     <value>E-Posta</value>
+  </data>
+  <data name="profil" xml:space="preserve">
+    <value>Profil</value>
   </data>
   <data name="sec" xml:space="preserve">
     <value>seçiniz</value>
