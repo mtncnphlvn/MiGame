@@ -258,11 +258,26 @@
   <data name="kutuphane" xml:space="preserve">
     <value>Library</value>
   </data>
+  <data name="oyunAdi" xml:space="preserve">
+    <value>G. Name :</value>
+  </data>
   <data name="oyunEkle" xml:space="preserve">
     <value>Add Game</value>
   </data>
+  <data name="oyunFiyat" xml:space="preserve">
+    <value>Price :</value>
+  </data>
+  <data name="oyunKategori" xml:space="preserve">
+    <value>Category :</value>
+  </data>
+  <data name="oyunKonu" xml:space="preserve">
+    <value>G. Subject :</value>
+  </data>
   <data name="oyunlarim" xml:space="preserve">
     <value>My Games</value>
+  </data>
+  <data name="oyunResim" xml:space="preserve">
+    <value>Picture :</value>
   </data>
   <data name="paraisaret" xml:space="preserve">
     <value>$</value>
@@ -293,5 +308,14 @@
   </data>
   <data name="yil" xml:space="preserve">
     <value>Year</value>
+  </data>
+  <data name="eklendi" xml:space="preserve">
+    <value>Game added</value>
+  </data>
+  <data name="eklenemedi" xml:space="preserve">
+    <value>Game could not be added</value>
+  </data>
+  <data name="katsec" xml:space="preserve">
+    <value>---- Select Category ----</value>
   </data>
 </root>

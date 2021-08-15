@@ -250,6 +250,24 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Oyun Eklendi.
+        /// </summary>
+        internal static string eklendi {
+            get {
+                return ResourceManager.GetString("eklendi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oyun Eklenemedi.
+        /// </summary>
+        internal static string eklenemedi {
+            get {
+                return ResourceManager.GetString("eklenemedi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Eksik Karakter!.
         /// </summary>
         internal static string eksik1 {
@@ -394,6 +412,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ---- Kategori Seçiniz ----.
+        /// </summary>
+        internal static string katsec {
+            get {
+                return ResourceManager.GetString("katsec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kayıt Ol.
         /// </summary>
         internal static string kayit {
@@ -484,6 +511,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Oyun Adı :.
+        /// </summary>
+        internal static string oyunAdi {
+            get {
+                return ResourceManager.GetString("oyunAdi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oyun Ekle.
         /// </summary>
         internal static string oyunEkle {
@@ -493,11 +529,47 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fiyat :.
+        /// </summary>
+        internal static string oyunFiyat {
+            get {
+                return ResourceManager.GetString("oyunFiyat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kategori :.
+        /// </summary>
+        internal static string oyunKategori {
+            get {
+                return ResourceManager.GetString("oyunKategori", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oyun Konu :.
+        /// </summary>
+        internal static string oyunKonu {
+            get {
+                return ResourceManager.GetString("oyunKonu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oyunlarım.
         /// </summary>
         internal static string oyunlarim {
             get {
                 return ResourceManager.GetString("oyunlarim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resim :.
+        /// </summary>
+        internal static string oyunResim {
+            get {
+                return ResourceManager.GetString("oyunResim", resourceCulture);
             }
         }
         

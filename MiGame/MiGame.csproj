@@ -167,6 +167,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Localization.en-US.resx</DependentUpon>
     </Compile>
+    <Compile Include="Firma Class\Oyun.cs" />
+    <Compile Include="Firma Class\OyunYonetici.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.Designer.cs">
@@ -293,6 +295,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\firma_arayuz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_mor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_mor_over.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

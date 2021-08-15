@@ -258,11 +258,26 @@
   <data name="kutuphane" xml:space="preserve">
     <value>Kütüphane</value>
   </data>
+  <data name="oyunAdi" xml:space="preserve">
+    <value>Oyun Adı :</value>
+  </data>
   <data name="oyunEkle" xml:space="preserve">
     <value>Oyun Ekle</value>
   </data>
+  <data name="oyunFiyat" xml:space="preserve">
+    <value>Fiyat :</value>
+  </data>
+  <data name="oyunKategori" xml:space="preserve">
+    <value>Kategori :</value>
+  </data>
+  <data name="oyunKonu" xml:space="preserve">
+    <value>Oyun Konu :</value>
+  </data>
   <data name="oyunlarim" xml:space="preserve">
     <value>Oyunlarım</value>
+  </data>
+  <data name="oyunResim" xml:space="preserve">
+    <value>Resim :</value>
   </data>
   <data name="paraisaret" xml:space="preserve">
     <value>₺</value>
@@ -293,5 +308,14 @@
   </data>
   <data name="yil" xml:space="preserve">
     <value>Yıl</value>
+  </data>
+  <data name="eklendi" xml:space="preserve">
+    <value>Oyun Eklendi</value>
+  </data>
+  <data name="eklenemedi" xml:space="preserve">
+    <value>Oyun Eklenemedi</value>
+  </data>
+  <data name="katsec" xml:space="preserve">
+    <value>---- Kategori Seçiniz ----</value>
   </data>
 </root>
