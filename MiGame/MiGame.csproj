@@ -132,6 +132,12 @@
     <Compile Include="Firma\frmFirmaProfil.Designer.cs">
       <DependentUpon>frmFirmaProfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGirisSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisSecim.Designer.cs">
+      <DependentUpon>frmGirisSecim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,9 @@
     <EmbeddedResource Include="Firma\frmFirmaProfil.resx">
       <DependentUpon>frmFirmaProfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGirisSecim.resx">
+      <DependentUpon>frmGirisSecim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\frmKullaniciAnasayfa.resx">
       <DependentUpon>frmKullaniciAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,7 +358,9 @@
   <ItemGroup>
     <None Include="Resources\buton_mor_over.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\giris_secim.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\admin_arayuz.png" />
   </ItemGroup>
@@ -361,6 +372,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\balık5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris_buton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris_buton_over.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

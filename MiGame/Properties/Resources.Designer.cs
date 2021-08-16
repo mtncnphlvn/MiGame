@@ -213,6 +213,36 @@ namespace MiGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giris_buton {
+            get {
+                object obj = ResourceManager.GetObject("giris_buton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giris_buton_over {
+            get {
+                object obj = ResourceManager.GetObject("giris_buton_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giris_secim {
+            get {
+                object obj = ResourceManager.GetObject("giris_secim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kullanici_giris2 {
             get {
                 object obj = ResourceManager.GetObject("kullanici_giris2", resourceCulture);

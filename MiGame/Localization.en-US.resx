@@ -351,4 +351,19 @@
   <data name="silinemedi" xml:space="preserve">
     <value>Could not be deleted</value>
   </data>
+  <data name="adminGiris" xml:space="preserve">
+    <value>Admin Login</value>
+  </data>
+  <data name="firmaGiris" xml:space="preserve">
+    <value>Company Login</value>
+  </data>
+  <data name="firmaKayit" xml:space="preserve">
+    <value>Company Registration</value>
+  </data>
+  <data name="kullaniciGiris" xml:space="preserve">
+    <value>User Login</value>
+  </data>
+  <data name="kullaniciKayit" xml:space="preserve">
+    <value>User Registration</value>
+  </data>
 </root>

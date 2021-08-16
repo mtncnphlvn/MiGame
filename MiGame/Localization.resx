@@ -351,4 +351,19 @@
   <data name="silinemedi" xml:space="preserve">
     <value>Silinemedi</value>
   </data>
+  <data name="adminGiris" xml:space="preserve">
+    <value>Admin Giriş</value>
+  </data>
+  <data name="firmaGiris" xml:space="preserve">
+    <value>Firma Giriş</value>
+  </data>
+  <data name="firmaKayit" xml:space="preserve">
+    <value>Firma Kayıt</value>
+  </data>
+  <data name="kullaniciGiris" xml:space="preserve">
+    <value>Kullanıcı Giriş</value>
+  </data>
+  <data name="kullaniciKayit" xml:space="preserve">
+    <value>Kullanıcı Kayıt</value>
+  </data>
 </root>

@@ -79,6 +79,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Admin Giriş.
+        /// </summary>
+        internal static string adminGiris {
+            get {
+                return ResourceManager.GetString("adminGiris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kullanıcılar.
         /// </summary>
         internal static string adminKullanici {
@@ -313,6 +322,24 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Firma Giriş.
+        /// </summary>
+        internal static string firmaGiris {
+            get {
+                return ResourceManager.GetString("firmaGiris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Firma Kayıt.
+        /// </summary>
+        internal static string firmaKayit {
+            get {
+                return ResourceManager.GetString("firmaKayit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Firma sistemde kayıtlı.
         /// </summary>
         internal static string firmaKayitli {
@@ -543,6 +570,24 @@ namespace MiGame {
         internal static string kullanici {
             get {
                 return ResourceManager.GetString("kullanici", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kullanıcı Giriş.
+        /// </summary>
+        internal static string kullaniciGiris {
+            get {
+                return ResourceManager.GetString("kullaniciGiris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kullanıcı Kayıt.
+        /// </summary>
+        internal static string kullaniciKayit {
+            get {
+                return ResourceManager.GetString("kullaniciKayit", resourceCulture);
             }
         }
         

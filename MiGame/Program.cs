@@ -16,7 +16,7 @@ namespace MiGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdminAnasayfa());
+            Application.Run(new frmGirisSecim());
         }
     }
 }
