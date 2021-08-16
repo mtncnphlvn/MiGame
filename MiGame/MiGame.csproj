@@ -50,8 +50,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin Class\Admin.cs" />
+    <Compile Include="Admin Class\AdminYonetici.cs" />
     <Compile Include="Firma Class\Firma.cs" />
     <Compile Include="Firma Class\FirmaYonetici.cs" />
+    <Compile Include="Admin\frmAdminAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminAnasayfa.Designer.cs">
+      <DependentUpon>frmAdminAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminFirmalar.Designer.cs">
+      <DependentUpon>frmAdminFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminKullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminKullanicilar.Designer.cs">
+      <DependentUpon>frmAdminKullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminOnayli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminOnayli.Designer.cs">
+      <DependentUpon>frmAdminOnayli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminOnaysiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminOnaysiz.Designer.cs">
+      <DependentUpon>frmAdminOnaysiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +218,21 @@
     <EmbeddedResource Include="Firma\frmFirmaKayit.resx">
       <DependentUpon>frmFirmaKayit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminAnasayfa.resx">
+      <DependentUpon>frmAdminAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminFirmalar.resx">
+      <DependentUpon>frmAdminFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminKullanicilar.resx">
+      <DependentUpon>frmAdminKullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminOnayli.resx">
+      <DependentUpon>frmAdminOnayli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminOnaysiz.resx">
+      <DependentUpon>frmAdminOnaysiz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDil.resx">
       <DependentUpon>frmDil.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +348,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\buton_mor_over.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\admin_arayuz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_buton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_buton_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balık5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -318,4 +318,37 @@
   <data name="katsec" xml:space="preserve">
     <value>---- Kategori Seçiniz ----</value>
   </data>
+  <data name="adminFirma" xml:space="preserve">
+    <value>Firmalar</value>
+  </data>
+  <data name="adminKullanici" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="onayliOyun" xml:space="preserve">
+    <value>Onaylı Oyunlar</value>
+  </data>
+  <data name="onaysizOyun" xml:space="preserve">
+    <value>Onaysız Oyunlar</value>
+  </data>
+  <data name="guncelBasari" xml:space="preserve">
+    <value>Güncelleme Başarılı</value>
+  </data>
+  <data name="guncelBasarisiz" xml:space="preserve">
+    <value>Güncelleme Başarısız</value>
+  </data>
+  <data name="iptal" xml:space="preserve">
+    <value>İptal et</value>
+  </data>
+  <data name="onayla" xml:space="preserve">
+    <value>Onayla</value>
+  </data>
+  <data name="sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="silindi" xml:space="preserve">
+    <value>Silindi</value>
+  </data>
+  <data name="silinemedi" xml:space="preserve">
+    <value>Silinemedi</value>
+  </data>
 </root>

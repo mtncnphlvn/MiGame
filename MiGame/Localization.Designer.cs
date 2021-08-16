@@ -70,6 +70,24 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Firmalar.
+        /// </summary>
+        internal static string adminFirma {
+            get {
+                return ResourceManager.GetString("adminFirma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kullanıcılar.
+        /// </summary>
+        internal static string adminKullanici {
+            get {
+                return ResourceManager.GetString("adminKullanici", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Anasayfa.
         /// </summary>
         internal static string anasayfa {
@@ -376,6 +394,24 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Güncelleme Başarılı.
+        /// </summary>
+        internal static string guncelBasari {
+            get {
+                return ResourceManager.GetString("guncelBasari", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Güncelleme Başarısız.
+        /// </summary>
+        internal static string guncelBasarisiz {
+            get {
+                return ResourceManager.GetString("guncelBasarisiz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Güvenlik Onayı.
         /// </summary>
         internal static string guvenonay {
@@ -399,6 +435,15 @@ namespace MiGame {
         internal static string hgir {
             get {
                 return ResourceManager.GetString("hgir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to İptal et.
+        /// </summary>
+        internal static string iptal {
+            get {
+                return ResourceManager.GetString("iptal", resourceCulture);
             }
         }
         
@@ -507,6 +552,33 @@ namespace MiGame {
         internal static string kutuphane {
             get {
                 return ResourceManager.GetString("kutuphane", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Onayla.
+        /// </summary>
+        internal static string onayla {
+            get {
+                return ResourceManager.GetString("onayla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Onaylı Oyunlar.
+        /// </summary>
+        internal static string onayliOyun {
+            get {
+                return ResourceManager.GetString("onayliOyun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Onaysız Oyunlar.
+        /// </summary>
+        internal static string onaysizOyun {
+            get {
+                return ResourceManager.GetString("onaysizOyun", resourceCulture);
             }
         }
         
@@ -642,6 +714,33 @@ namespace MiGame {
         internal static string sev {
             get {
                 return ResourceManager.GetString("sev", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sil.
+        /// </summary>
+        internal static string sil {
+            get {
+                return ResourceManager.GetString("sil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Silindi.
+        /// </summary>
+        internal static string silindi {
+            get {
+                return ResourceManager.GetString("silindi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Silinemedi.
+        /// </summary>
+        internal static string silinemedi {
+            get {
+                return ResourceManager.GetString("silinemedi", resourceCulture);
             }
         }
         

@@ -318,4 +318,37 @@
   <data name="katsec" xml:space="preserve">
     <value>---- Select Category ----</value>
   </data>
+  <data name="adminFirma" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="adminKullanici" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="onayliOyun" xml:space="preserve">
+    <value>Approved Games</value>
+  </data>
+  <data name="onaysizOyun" xml:space="preserve">
+    <value>Unapproved Games</value>
+  </data>
+  <data name="guncelBasari" xml:space="preserve">
+    <value>Update Successful</value>
+  </data>
+  <data name="guncelBasarisiz" xml:space="preserve">
+    <value>Update Failed</value>
+  </data>
+  <data name="iptal" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="onayla" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="sil" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="silindi" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="silinemedi" xml:space="preserve">
+    <value>Could not be deleted</value>
+  </data>
 </root>
