@@ -387,4 +387,46 @@
   <data name="degis" xml:space="preserve">
     <value>Change</value>
   </data>
+  <data name="oyunSahip" xml:space="preserve">
+    <value>You already have this game.</value>
+  </data>
+  <data name="satinAlmaBasari" xml:space="preserve">
+    <value>Purchase Successful</value>
+  </data>
+  <data name="satinAlmaBasarisiz" xml:space="preserve">
+    <value>Purchase Failed</value>
+  </data>
+  <data name="puanver" xml:space="preserve">
+    <value>Rate it</value>
+  </data>
+  <data name="yorumYap" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="satinAl" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="degerlendirme" xml:space="preserve">
+    <value>Game Rating</value>
+  </data>
+  <data name="puanEklendi" xml:space="preserve">
+    <value>Points Added</value>
+  </data>
+  <data name="yorumEklendi" xml:space="preserve">
+    <value>Comment Added</value>
+  </data>
+  <data name="gorusYaz" xml:space="preserve">
+    <value>Write Your Opinions</value>
+  </data>
+  <data name="bb" xml:space="preserve">
+    <value>Goodbye</value>
+  </data>
+  <data name="hatavar" xml:space="preserve">
+    <value>an error occurred</value>
+  </data>
+  <data name="hesap" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="hesapSil" xml:space="preserve">
+    <value>delete the account</value>
+  </data>
 </root>

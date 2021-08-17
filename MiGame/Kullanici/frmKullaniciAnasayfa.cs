@@ -64,10 +64,10 @@ namespace MiGame
             KullaniciBilgi();
             frmKullaniciOyunListele frmKullaniciOyunListele = new frmKullaniciOyunListele();
             FormGetir(frmKullaniciOyunListele);
+            frmKullaniciOyunListele.frmKullaniciAnasayfa = this;
 
 
 
-          
             btnAnasayfa.Text = Localization.anasayfa;
             btnKutuphane.Text = Localization.kutuphane;
             btnGoruslerim.Text = Localization.goruslerim;
@@ -137,6 +137,8 @@ namespace MiGame
         {
             frmKullaniciProfil frmKullaniciProfil = new frmKullaniciProfil();
             FormGetir(frmKullaniciProfil);
+            frmKullaniciProfil.frmKullaniciAnasayfa = this;
+
         }
     }
 }

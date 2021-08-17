@@ -387,4 +387,46 @@
   <data name="degis" xml:space="preserve">
     <value>Değiş</value>
   </data>
+  <data name="oyunSahip" xml:space="preserve">
+    <value>Bu oyuna zaten sahipsiniz.</value>
+  </data>
+  <data name="satinAlmaBasari" xml:space="preserve">
+    <value>Satın Alma Başarılı</value>
+  </data>
+  <data name="satinAlmaBasarisiz" xml:space="preserve">
+    <value>Satın Alma Başarısız</value>
+  </data>
+  <data name="puanver" xml:space="preserve">
+    <value>Puan Ver</value>
+  </data>
+  <data name="yorumYap" xml:space="preserve">
+    <value>Yorum Yap</value>
+  </data>
+  <data name="satinAl" xml:space="preserve">
+    <value>Satın Al</value>
+  </data>
+  <data name="degerlendirme" xml:space="preserve">
+    <value>Oyun Değerlendirme</value>
+  </data>
+  <data name="puanEklendi" xml:space="preserve">
+    <value>Puan Eklendi</value>
+  </data>
+  <data name="yorumEklendi" xml:space="preserve">
+    <value>Yorum Eklendi</value>
+  </data>
+  <data name="gorusYaz" xml:space="preserve">
+    <value>Görüşlerinizi Yazınız</value>
+  </data>
+  <data name="bb" xml:space="preserve">
+    <value>Hoşçakal</value>
+  </data>
+  <data name="hatavar" xml:space="preserve">
+    <value>Bir hata meydana geldi</value>
+  </data>
+  <data name="hesap" xml:space="preserve">
+    <value>Hesap</value>
+  </data>
+  <data name="hesapSil" xml:space="preserve">
+    <value>Hesabı Sil</value>
+  </data>
 </root>

@@ -144,7 +144,9 @@
     <Compile Include="frmGirisSecim.Designer.cs">
       <DependentUpon>frmGirisSecim.cs</DependentUpon>
     </Compile>
-    <Compile Include="KullaniciYorum.cs" />
+    <Compile Include="Kullanici Class\KullaniciYorum.cs" />
+    <Compile Include="Kullanici Class\KullaniciKutuphane.cs" />
+    <Compile Include="KullaniciGuncelle.cs" />
     <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +293,12 @@
     <EmbeddedResource Include="Kullanici\frmKullaniciProfil.resx">
       <DependentUpon>frmKullaniciProfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciPuan.resx">
+      <DependentUpon>frmKullaniciPuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciYorum.resx">
+      <DependentUpon>frmKullaniciYorum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Localization.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Localization.en-US.Designer.cs</LastGenOutput>
@@ -388,6 +396,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\giris_buton_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
