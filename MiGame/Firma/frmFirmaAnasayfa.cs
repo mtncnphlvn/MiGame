@@ -136,6 +136,8 @@ namespace MiGame
         {
             frmFirmaProfil frmFirmaProfil = new frmFirmaProfil();
             FirmaBilgi();
+            frmFirmaProfil.frmAna = this;
+
             FormGetir(frmFirmaProfil);
         }
     }

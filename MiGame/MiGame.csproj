@@ -84,10 +84,10 @@
     <Compile Include="Admin\frmAdminOnaysiz.Designer.cs">
       <DependentUpon>frmAdminOnaysiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminGiris.cs">
+    <Compile Include="Admin\frmAdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdminGiris.Designer.cs">
+    <Compile Include="Admin\frmAdminGiris.Designer.cs">
       <DependentUpon>frmAdminGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDil.cs">
@@ -144,6 +144,7 @@
     <Compile Include="frmGirisSecim.Designer.cs">
       <DependentUpon>frmGirisSecim.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciYorum.cs" />
     <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,7 +246,7 @@
     <EmbeddedResource Include="Admin\frmAdminOnaysiz.resx">
       <DependentUpon>frmAdminOnaysiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminGiris.resx">
+    <EmbeddedResource Include="Admin\frmAdminGiris.resx">
       <DependentUpon>frmAdminGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDil.resx">

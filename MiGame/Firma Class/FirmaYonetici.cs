@@ -106,5 +106,14 @@ namespace MiGame
             }
             return giris;
         }
+        public void ResimGuncelle(string resim, Label label)
+        {
+            string sorgu = "update firma_resim set firma_resim='" + MySql.Data.MySqlClient.MySqlHelper.EscapeString(resim) + "' where firma_id='" + Firma.firmaID + "'";
+            MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+            MySqlDataReader reader;
+            reader = komut.ExecuteReader();
+            label.Text =Localization.guncelBasari;
+            veritabaniYonetici.CloseConnection();
+        }
     }
 }

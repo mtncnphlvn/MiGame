@@ -369,4 +369,22 @@
   <data name="admin" xml:space="preserve">
     <value>Admin</value>
   </data>
+  <data name="fiyat2" xml:space="preserve">
+    <value>Price cannot be blank !</value>
+  </data>
+  <data name="katsec2" xml:space="preserve">
+    <value>Select Category !</value>
+  </data>
+  <data name="oyunGuncellendi" xml:space="preserve">
+    <value>The game has been successfully updated</value>
+  </data>
+  <data name="oyunGüncellenemedi" xml:space="preserve">
+    <value>Game update failed</value>
+  </data>
+  <data name="güncelle" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="degis" xml:space="preserve">
+    <value>Change</value>
+  </data>
 </root>

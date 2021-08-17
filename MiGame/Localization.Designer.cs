@@ -286,6 +286,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Değiş.
+        /// </summary>
+        internal static string degis {
+            get {
+                return ResourceManager.GetString("degis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oyun Eklendi.
         /// </summary>
         internal static string eklendi {
@@ -354,6 +363,15 @@ namespace MiGame {
         internal static string firmaKayitli {
             get {
                 return ResourceManager.GetString("firmaKayitli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fiyat Boş Geçilemez !.
+        /// </summary>
+        internal static string fiyat2 {
+            get {
+                return ResourceManager.GetString("fiyat2", resourceCulture);
             }
         }
         
@@ -448,6 +466,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Güncelle.
+        /// </summary>
+        internal static string güncelle {
+            get {
+                return ResourceManager.GetString("güncelle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Güvenlik Onayı.
         /// </summary>
         internal static string guvenonay {
@@ -498,6 +525,15 @@ namespace MiGame {
         internal static string katsec {
             get {
                 return ResourceManager.GetString("katsec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kategori Seçiniz !.
+        /// </summary>
+        internal static string katsec2 {
+            get {
+                return ResourceManager.GetString("katsec2", resourceCulture);
             }
         }
         
@@ -660,6 +696,24 @@ namespace MiGame {
         internal static string oyunFiyat {
             get {
                 return ResourceManager.GetString("oyunFiyat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oyun Başarıyla Güncellendi.
+        /// </summary>
+        internal static string oyunGuncellendi {
+            get {
+                return ResourceManager.GetString("oyunGuncellendi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oyun Güncelleme Başarısız.
+        /// </summary>
+        internal static string oyunGüncellenemedi {
+            get {
+                return ResourceManager.GetString("oyunGüncellenemedi", resourceCulture);
             }
         }
         

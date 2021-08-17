@@ -369,4 +369,22 @@
   <data name="admin" xml:space="preserve">
     <value>Admin</value>
   </data>
+  <data name="fiyat2" xml:space="preserve">
+    <value>Fiyat Boş Geçilemez !</value>
+  </data>
+  <data name="katsec2" xml:space="preserve">
+    <value>Kategori Seçiniz !</value>
+  </data>
+  <data name="oyunGuncellendi" xml:space="preserve">
+    <value>Oyun Başarıyla Güncellendi</value>
+  </data>
+  <data name="oyunGüncellenemedi" xml:space="preserve">
+    <value>Oyun Güncelleme Başarısız</value>
+  </data>
+  <data name="güncelle" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="degis" xml:space="preserve">
+    <value>Değiş</value>
+  </data>
 </root>
