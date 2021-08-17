@@ -366,4 +366,7 @@
   <data name="kullaniciKayit" xml:space="preserve">
     <value>Kullanıcı Kayıt</value>
   </data>
+  <data name="admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
 </root>

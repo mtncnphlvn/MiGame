@@ -366,4 +366,7 @@
   <data name="kullaniciKayit" xml:space="preserve">
     <value>User Registration</value>
   </data>
+  <data name="admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
 </root>

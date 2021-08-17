@@ -82,31 +82,7 @@ namespace MiGame
             Application.Exit();
         }
 
-        private void btnGiris_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtEposta.Text) || txtEposta.Text == Localization.posta)
-            {
-                lblEpostaUyari.Text = Localization.bos;
-            }
-            else if (string.IsNullOrEmpty(txtSifre.Text) || txtSifre.Text == Localization.g3)
-            {
-                lblSifreUyari.Text = Localization.bos;
-            }
-            else
-            {
-                Firma firma = new Firma();
-                FirmaYonetici firmaYonetici = new FirmaYonetici();
-
-                firma.getFirmaEposta = txtEposta.Text;
-                firma.getFirmaSifre = txtSifre.Text;
-
-                if (firmaYonetici.Giris(firma) == true)
-                {
-
-                }
-            }
-           
-        }
+     
         Kontrol kontrol = new Kontrol();
         TextDoldur textDoldur = new TextDoldur();
         private void txtEposta_Enter(object sender, EventArgs e)
@@ -137,6 +113,31 @@ namespace MiGame
         private void txtSifre_TextChanged(object sender, EventArgs e)
         {
             kontrol.Giris(txtSifre, lblSifreUyari, Localization.g3);
+        }
+
+        private void btnGiris_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtEposta.Text) || txtEposta.Text == Localization.posta)
+            {
+                lblEpostaUyari.Text = Localization.bos;
+            }
+            else if (string.IsNullOrEmpty(txtSifre.Text) || txtSifre.Text == Localization.g3)
+            {
+                lblSifreUyari.Text = Localization.bos;
+            }
+            else
+            {
+                Firma firma = new Firma();
+                FirmaYonetici firmaYonetici = new FirmaYonetici();
+                firma.getFirmaEposta = txtEposta.Text;
+                firma.getFirmaSifre = txtSifre.Text;
+
+                if(firmaYonetici.Giris(firma) == true)
+                {
+
+                }
+
+            }
         }
     }
 }

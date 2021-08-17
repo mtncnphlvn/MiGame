@@ -107,7 +107,9 @@ namespace MiGame
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-
+            frmAdminGiris frmAdminGiris = new frmAdminGiris();
+            frmAdminGiris.Show();
+            this.Hide();
         }
 
         private void frmGirisSecim_Load(object sender, EventArgs e)

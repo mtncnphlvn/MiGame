@@ -12,9 +12,39 @@ namespace MiGame
 {
     class AdminYonetici
     {
-
-
         VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
+
+        public bool Giris(Admin admin)
+        {
+            en();
+            bool giris = false;
+            try
+            {
+                string sorgu = "select * from admin where admin_ad='" + admin.getAdmin + "'and admin_sifre='" + admin.getSifre + "'";
+                MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+                MySqlDataReader reader;
+                reader = komut.ExecuteReader();
+                if (reader.Read())
+                {
+                    giris = true;
+                    MessageBox.Show(Localization.gbasari);
+                }
+                else
+                {
+                    MessageBox.Show(Localization.gbasarisiz);
+                }
+                veritabaniYonetici.CloseConnection();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Localization.hata + " : " + ex.Message);
+            }
+            return giris;
+        }
+
+
+
 
         private void en()
         {
