@@ -105,7 +105,9 @@ namespace MiGame
 
                 if (kullaniciYonetici.Giris(kullanici) == true)
                 {
-
+                    frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
+                    frmKullaniciAnasayfa.Show();
+                    this.Hide();
                 }
             }
         }

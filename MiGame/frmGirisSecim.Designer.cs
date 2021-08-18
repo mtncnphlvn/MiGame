@@ -155,6 +155,7 @@
             this.btnCarpi.Size = new System.Drawing.Size(20, 20);
             this.btnCarpi.TabIndex = 8;
             this.btnCarpi.UseVisualStyleBackColor = false;
+            this.btnCarpi.Click += new System.EventHandler(this.btnCarpi_Click);
             this.btnCarpi.MouseLeave += new System.EventHandler(this.btnCarpi_MouseLeave);
             this.btnCarpi.MouseHover += new System.EventHandler(this.btnCarpi_MouseHover);
             // 

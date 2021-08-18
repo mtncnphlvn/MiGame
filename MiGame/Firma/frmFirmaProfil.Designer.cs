@@ -76,7 +76,7 @@
             this.lblDil.AutoSize = true;
             this.lblDil.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.lblDil.Location = new System.Drawing.Point(490, 9);
+            this.lblDil.Location = new System.Drawing.Point(503, 9);
             this.lblDil.Name = "lblDil";
             this.lblDil.Size = new System.Drawing.Size(85, 23);
             this.lblDil.TabIndex = 17;
@@ -136,7 +136,7 @@
             this.btnDegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDegis.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDegis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
-            this.btnDegis.Location = new System.Drawing.Point(495, 36);
+            this.btnDegis.Location = new System.Drawing.Point(507, 36);
             this.btnDegis.Name = "btnDegis";
             this.btnDegis.Size = new System.Drawing.Size(80, 35);
             this.btnDegis.TabIndex = 20;
@@ -162,11 +162,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(700, 600);
+            this.Controls.Add(this.lblDil);
             this.Controls.Add(this.btnDegis);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnResimSec);
             this.Controls.Add(this.txtResimYolu);
-            this.Controls.Add(this.lblDil);
             this.Controls.Add(this.lblonay);
             this.Controls.Add(this.lblResim);
             this.Controls.Add(this.lblGorusler);

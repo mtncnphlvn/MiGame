@@ -146,7 +146,7 @@
     </Compile>
     <Compile Include="Kullanici Class\KullaniciYorum.cs" />
     <Compile Include="Kullanici Class\KullaniciKutuphane.cs" />
-    <Compile Include="KullaniciGuncelle.cs" />
+    <Compile Include="Kullanici Class\KullaniciGuncelle.cs" />
     <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>

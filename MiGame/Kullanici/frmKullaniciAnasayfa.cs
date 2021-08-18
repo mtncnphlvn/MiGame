@@ -67,7 +67,7 @@ namespace MiGame
             frmKullaniciOyunListele.frmKullaniciAnasayfa = this;
 
 
-
+            linkBakiye.Text = Localization.bakiyeYukle;
             btnAnasayfa.Text = Localization.anasayfa;
             btnKutuphane.Text = Localization.kutuphane;
             btnGoruslerim.Text = Localization.goruslerim;
@@ -139,6 +139,29 @@ namespace MiGame
             FormGetir(frmKullaniciProfil);
             frmKullaniciProfil.frmKullaniciAnasayfa = this;
 
+        }
+
+        private void btnCarpi_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnCarpi_MouseHover(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross_over;
+        }
+
+        private void btnCarpi_MouseLeave(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross;
+
+        }
+
+        private void linkBakiye_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+            kullaniciYonetici.BakiyeEkle();
+            KullaniciBilgi();
         }
     }
 }

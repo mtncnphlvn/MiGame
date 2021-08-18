@@ -108,5 +108,12 @@ namespace MiGame
             return giris;
 
         }
+        public void BakiyeEkle()
+        {
+            string sorgu = "insert into kullanici_bakiye(kul_id,kul_bakiye) values ('" + Kullanici.kullaniciID + "',100)";
+            MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+            komut.ExecuteReader();
+            veritabaniYonetici.CloseConnection();
+        }
     }
 }

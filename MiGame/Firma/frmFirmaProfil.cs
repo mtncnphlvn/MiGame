@@ -87,5 +87,10 @@ namespace MiGame
             btnDegis.BackgroundImage = Properties.Resources.buton_giris_over;
 
         }
+
+        private void panKul_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

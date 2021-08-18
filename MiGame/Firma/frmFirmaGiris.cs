@@ -134,7 +134,9 @@ namespace MiGame
 
                 if(firmaYonetici.Giris(firma) == true)
                 {
-
+                    frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
+                    frmFirmaAnasayfa.Show();
+                    this.Hide();
                 }
 
             }

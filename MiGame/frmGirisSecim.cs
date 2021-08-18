@@ -124,5 +124,11 @@ namespace MiGame
             btnFirmaKayit.Text = Localization.firmaKayit;
             btnAdmin.Text = Localization.adminGiris;
         }
+
+        private void btnCarpi_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

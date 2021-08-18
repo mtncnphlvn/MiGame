@@ -251,10 +251,10 @@ namespace MiGame
             {
                 lblGuvenlikUyari.Text = Localization.bos;
             }
-            //else if (txtGuvenlik.Text != onayKodu)
-            //{
-            //    lblGuvenlikUyari.Text = Localization.kodhata;
-            //}
+            else if (txtGuvenlik.Text != onayKodu)
+            {
+                lblGuvenlikUyari.Text = Localization.kodhata;
+            }
             else if (kontrol.KarakterKontrol(txtSifre, 0, 8, lblSifreUyari) == false || txtSifre.Text == Localization.pass)
             {
                 if (string.IsNullOrEmpty(txtSifre.Text) || txtSifre.Text == Localization.pass)
@@ -281,7 +281,9 @@ namespace MiGame
                     {
                         if (firmaYonetici.Giris(firma) == true)
                         {
-                            
+                            frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
+                            frmFirmaAnasayfa.Show();
+                            this.Hide();
                         }
                     }
                 }

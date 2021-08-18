@@ -332,10 +332,10 @@ namespace MiGame
             {
                 lblKodUyari.Text = Localization.bos;
             }
-            //else if (txtGuvenlik.Text != onayKodu)
-            //{
-            //    lblKodUyari.Text = Localization.kodhata;
-            //}
+            else if (txtGuvenlik.Text != onayKodu)
+            {
+                lblKodUyari.Text = Localization.kodhata;
+            }
             else if (kontrol.KarakterKontrol(txtKulAd, 0, 4, lblKuladUyari) == false || txtKulAd.Text == Localization.kullanici)
             {
                 if (string.IsNullOrEmpty(txtKulAd.Text) || txtKulAd.Text == Localization.kullanici)
@@ -388,7 +388,9 @@ namespace MiGame
                     {
                     if (kullaniciYonetici.Giris(kullanici) == true)
                     {
-
+                            frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
+                            frmKullaniciAnasayfa.Show();
+                            this.Hide();
                     }
                 }
                 }

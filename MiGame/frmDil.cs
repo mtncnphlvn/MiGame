@@ -34,7 +34,8 @@ namespace MiGame
             cmbDiller.SelectedIndex = 0;
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+
+        private void btnKaydet_Click_1(object sender, EventArgs e)
         {
             if (cmbDiller.SelectedIndex == 0)
             {
@@ -54,6 +55,33 @@ namespace MiGame
 
             Settings.Default.baslangicDil = 1;
             Settings.Default.Save();
+        }
+
+        private void btnKaydet_MouseHover(object sender, EventArgs e)
+        {
+            btnKaydet.BackgroundImage = Properties.Resources.buton_giris;
+        }
+
+        private void btnKaydet_MouseLeave(object sender, EventArgs e)
+        {
+            btnKaydet.BackgroundImage = Properties.Resources.buton_giris_over;
+
+        }
+
+        private void btnCarpi_MouseHover(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross_over;
+        }
+
+        private void btnCarpi_MouseLeave(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross;
+
+        }
+
+        private void btnCarpi_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

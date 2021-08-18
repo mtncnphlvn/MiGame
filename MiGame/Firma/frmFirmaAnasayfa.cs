@@ -140,5 +140,20 @@ namespace MiGame
 
             FormGetir(frmFirmaProfil);
         }
+
+        private void btnCarpi_MouseHover(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross_over;
+        }
+
+        private void btnCarpi_MouseLeave(object sender, EventArgs e)
+        {
+            btnCarpi.BackgroundImage = Properties.Resources.cross;
+        }
+
+        private void btnCarpi_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

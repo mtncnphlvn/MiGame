@@ -429,4 +429,7 @@
   <data name="hesapSil" xml:space="preserve">
     <value>Hesabı Sil</value>
   </data>
+  <data name="bakiyeYukle" xml:space="preserve">
+    <value>Bakiye Yükle</value>
+  </data>
 </root>

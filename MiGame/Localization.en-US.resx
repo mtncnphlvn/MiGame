@@ -429,4 +429,7 @@
   <data name="hesapSil" xml:space="preserve">
     <value>delete the account</value>
   </data>
+  <data name="bakiyeYukle" xml:space="preserve">
+    <value>Load Money</value>
+  </data>
 </root>

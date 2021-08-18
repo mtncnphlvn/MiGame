@@ -232,6 +232,15 @@ namespace MiGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bakiye Yükle.
+        /// </summary>
+        internal static string bakiyeYukle {
+            get {
+                return ResourceManager.GetString("bakiyeYukle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hoşçakal.
         /// </summary>
         internal static string bb {

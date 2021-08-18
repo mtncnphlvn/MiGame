@@ -108,7 +108,7 @@ namespace MiGame
         }
         public void OyunListele(DataGridView dataGridView)
         {
-            string sorgu = "select oyun.oyun_id as ID, oyun.oyun_adi as OyunAdı,oyun.oyun_konu as Konu, kategori.kat_adi as Kategori,AVG(puan.puan) as Puan, firma.firma_ad as Firma, oyun.oyun_fiyat as Fiyat from oyun inner join kategori on oyun.kat_id = kategori.kat_id inner join puan on oyun.oyun_id = puan.oyun_id  inner join firma on oyun.firma_id = firma.firma_id group by oyun.oyun_adi order by oyun.oyun_adi";
+            string sorgu = "select oyun.oyun_id as ID, oyun.oyun_adi as OyunAdı,oyun.oyun_konu as Konu, kategori.kat_adi as Kategori,AVG(puan.puan) as Puan, firma.firma_ad as Firma, oyun.oyun_fiyat as Fiyat from oyun inner join kategori on oyun.kat_id = kategori.kat_id inner join puan on oyun.oyun_id = puan.oyun_id inner join firma on oyun.firma_id = firma.firma_id where oyun.oyun_durum = 1 group by oyun.oyun_adi order by oyun.oyun_adi";
             MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
             MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
             MySqlDataReader reader;

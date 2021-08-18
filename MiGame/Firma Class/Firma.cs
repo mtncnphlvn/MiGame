@@ -8,7 +8,7 @@ namespace MiGame
 {
     class Firma
     {
-        public static int firmaID = 3;
+        public static int firmaID;
         private string firmaAdi;
         private string firmaCeo;
         private string firmaEposta;

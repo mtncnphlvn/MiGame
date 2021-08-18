@@ -37,6 +37,7 @@
             this.lblBakiye = new System.Windows.Forms.Label();
             this.lblKulAd = new System.Windows.Forms.Label();
             this.pbResim = new System.Windows.Forms.PictureBox();
+            this.btnCarpi = new System.Windows.Forms.Button();
             this.pnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             this.pnlSol.BackColor = System.Drawing.Color.Pink;
             this.pnlSol.BackgroundImage = global::MiGame.Properties.Resources.firma_arayuz2;
             this.pnlSol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlSol.Controls.Add(this.btnCarpi);
             this.pnlSol.Controls.Add(this.btnProfil);
             this.pnlSol.Controls.Add(this.btnOyunEkle);
             this.pnlSol.Controls.Add(this.btnOyunlarim);
@@ -184,6 +186,24 @@
             this.pbResim.TabIndex = 0;
             this.pbResim.TabStop = false;
             // 
+            // btnCarpi
+            // 
+            this.btnCarpi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.BackgroundImage = global::MiGame.Properties.Resources.cross;
+            this.btnCarpi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCarpi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarpi.Location = new System.Drawing.Point(3, 3);
+            this.btnCarpi.Name = "btnCarpi";
+            this.btnCarpi.Size = new System.Drawing.Size(20, 20);
+            this.btnCarpi.TabIndex = 8;
+            this.btnCarpi.UseVisualStyleBackColor = false;
+            this.btnCarpi.Click += new System.EventHandler(this.btnCarpi_Click);
+            this.btnCarpi.MouseLeave += new System.EventHandler(this.btnCarpi_MouseLeave);
+            this.btnCarpi.MouseHover += new System.EventHandler(this.btnCarpi_MouseHover);
+            // 
             // frmFirmaAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,5 +235,6 @@
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnOyunEkle;
         private System.Windows.Forms.Button btnOyunlarim;
+        private System.Windows.Forms.Button btnCarpi;
     }
 }

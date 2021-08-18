@@ -71,6 +71,8 @@ namespace MiGame
             label11.Text = Localization.oyunResim;
             btnSil.Text = Localization.hesapSil;
             label12.Text = Localization.hesap;
+            btnDil.Text = Localization.degis;
+            lblDil.Text = Localization.d1;
         }
 
         private void btnSifreGuncelle_Click(object sender, EventArgs e)
@@ -113,6 +115,71 @@ namespace MiGame
         {
             kullaniciGuncelle.HesapSil();
             Application.Exit();
+        }
+
+        private void btnDil_MouseHover(object sender, EventArgs e)
+        {
+            btnDil.BackgroundImage = Properties.Resources.buton_mor_over;
+        }
+
+        private void btnDil_MouseLeave(object sender, EventArgs e)
+        {
+            btnDil.BackgroundImage = Properties.Resources.buton_mor;
+
+        }
+
+        private void btnSifreGuncelle_MouseHover(object sender, EventArgs e)
+        {
+            btnSifreGuncelle.BackgroundImage = Properties.Resources.buton_mor_over;
+
+        }
+
+        private void btnSifreGuncelle_MouseLeave(object sender, EventArgs e)
+        {
+            btnSifreGuncelle.BackgroundImage = Properties.Resources.buton_mor;
+
+        }
+
+        private void btnAdGuncelle_MouseHover(object sender, EventArgs e)
+        {
+            btnAdGuncelle.BackgroundImage = Properties.Resources.buton_mor_over;
+
+        }
+
+        private void btnAdGuncelle_MouseLeave(object sender, EventArgs e)
+        {
+            btnAdGuncelle.BackgroundImage = Properties.Resources.buton_mor;
+
+        }
+
+        private void btnResimGuncelle_MouseHover(object sender, EventArgs e)
+        {
+            btnResimGuncelle.BackgroundImage = Properties.Resources.buton_mor_over;
+
+        }
+
+        private void btnResimGuncelle_MouseLeave(object sender, EventArgs e)
+        {
+            btnResimGuncelle.BackgroundImage = Properties.Resources.buton_mor;
+
+        }
+
+        private void btnSil_MouseHover(object sender, EventArgs e)
+        {
+            btnSil.BackgroundImage = Properties.Resources.buton_mor_over;
+
+        }
+
+        private void btnSil_MouseLeave(object sender, EventArgs e)
+        {
+            btnSil.BackgroundImage = Properties.Resources.buton_mor;
+
+        }
+
+        private void btnDil_Click(object sender, EventArgs e)
+        {
+            frmDil frmDil = new frmDil();
+            frmDil.Show();
         }
     }
 }

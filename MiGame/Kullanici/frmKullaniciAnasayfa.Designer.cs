@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlSol = new System.Windows.Forms.Panel();
+            this.btnCarpi = new System.Windows.Forms.Button();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnGoruslerim = new System.Windows.Forms.Button();
             this.btnKutuphane = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.lblKulAd = new System.Windows.Forms.Label();
             this.pbResim = new System.Windows.Forms.PictureBox();
             this.pnlSag = new System.Windows.Forms.Panel();
+            this.linkBakiye = new System.Windows.Forms.LinkLabel();
             this.pnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +48,8 @@
             this.pnlSol.BackColor = System.Drawing.Color.Pink;
             this.pnlSol.BackgroundImage = global::MiGame.Properties.Resources.firma_arayuz2;
             this.pnlSol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlSol.Controls.Add(this.linkBakiye);
+            this.pnlSol.Controls.Add(this.btnCarpi);
             this.pnlSol.Controls.Add(this.btnProfil);
             this.pnlSol.Controls.Add(this.btnGoruslerim);
             this.pnlSol.Controls.Add(this.btnKutuphane);
@@ -57,6 +61,24 @@
             this.pnlSol.Name = "pnlSol";
             this.pnlSol.Size = new System.Drawing.Size(200, 600);
             this.pnlSol.TabIndex = 1;
+            // 
+            // btnCarpi
+            // 
+            this.btnCarpi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.BackgroundImage = global::MiGame.Properties.Resources.cross;
+            this.btnCarpi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCarpi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.btnCarpi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarpi.Location = new System.Drawing.Point(3, 3);
+            this.btnCarpi.Name = "btnCarpi";
+            this.btnCarpi.Size = new System.Drawing.Size(20, 20);
+            this.btnCarpi.TabIndex = 8;
+            this.btnCarpi.UseVisualStyleBackColor = false;
+            this.btnCarpi.Click += new System.EventHandler(this.btnCarpi_Click);
+            this.btnCarpi.MouseLeave += new System.EventHandler(this.btnCarpi_MouseLeave);
+            this.btnCarpi.MouseHover += new System.EventHandler(this.btnCarpi_MouseHover);
             // 
             // btnProfil
             // 
@@ -184,6 +206,21 @@
             this.pnlSag.Size = new System.Drawing.Size(700, 600);
             this.pnlSag.TabIndex = 2;
             // 
+            // linkBakiye
+            // 
+            this.linkBakiye.ActiveLinkColor = System.Drawing.Color.Red;
+            this.linkBakiye.AutoSize = true;
+            this.linkBakiye.BackColor = System.Drawing.Color.Transparent;
+            this.linkBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold);
+            this.linkBakiye.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
+            this.linkBakiye.Location = new System.Drawing.Point(71, 363);
+            this.linkBakiye.Name = "linkBakiye";
+            this.linkBakiye.Size = new System.Drawing.Size(69, 12);
+            this.linkBakiye.TabIndex = 9;
+            this.linkBakiye.TabStop = true;
+            this.linkBakiye.Text = "Bakiye Yükle";
+            this.linkBakiye.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBakiye_LinkClicked);
+            // 
             // frmKullaniciAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,5 +252,7 @@
         private System.Windows.Forms.Label lblKulAd;
         private System.Windows.Forms.PictureBox pbResim;
         private System.Windows.Forms.Panel pnlSag;
+        private System.Windows.Forms.Button btnCarpi;
+        private System.Windows.Forms.LinkLabel linkBakiye;
     }
 }
