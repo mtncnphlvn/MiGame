@@ -34,7 +34,6 @@
             this.txtKonu = new System.Windows.Forms.RichTextBox();
             this.txtOyunAdi = new System.Windows.Forms.RichTextBox();
             this.pbOyunResim = new System.Windows.Forms.PictureBox();
-            this.txtArama = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).BeginInit();
@@ -129,22 +128,6 @@
             this.pbOyunResim.TabIndex = 0;
             this.pbOyunResim.TabStop = false;
             // 
-            // txtArama
-            // 
-            this.txtArama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(0)))));
-            this.txtArama.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtArama.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtArama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
-            this.txtArama.Location = new System.Drawing.Point(57, 32);
-            this.txtArama.Name = "txtArama";
-            this.txtArama.Size = new System.Drawing.Size(156, 23);
-            this.txtArama.TabIndex = 16;
-            this.txtArama.Text = "Oyun Adı";
-            this.txtArama.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtArama.TextChanged += new System.EventHandler(this.txtArama_TextChanged);
-            this.txtArama.Enter += new System.EventHandler(this.txtArama_Enter);
-            this.txtArama.Leave += new System.EventHandler(this.txtArama_Leave);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -162,7 +145,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(20)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtArama);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmKullaniciKutuphane";
@@ -172,7 +154,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -184,7 +165,6 @@
         private System.Windows.Forms.RichTextBox txtKonu;
         private System.Windows.Forms.RichTextBox txtOyunAdi;
         private System.Windows.Forms.PictureBox pbOyunResim;
-        private System.Windows.Forms.TextBox txtArama;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

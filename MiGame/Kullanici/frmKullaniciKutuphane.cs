@@ -50,7 +50,7 @@ namespace MiGame
 
             pbOyunResim.SizeMode = PictureBoxSizeMode.StretchImage;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            txtArama.Text = Localization.oyunAdi;
+            //txtArama.Text = Localization.oyunAdi;
             txtOyunAdi.Text = Localization.oyunAdi;
             txtKonu.Text = Localization.oyunKonu;
             btnYorum.Text = Localization.yorumYap;
@@ -58,25 +58,25 @@ namespace MiGame
         }
         TextDoldur textDoldur = new TextDoldur();
 
-        private void txtArama_Enter(object sender, EventArgs e)
-        {
-            textDoldur.TextEnter(txtArama, Localization.oyunAdi);
-        }
+        //private void txtArama_Enter(object sender, EventArgs e)
+        //{
+        //    textDoldur.TextEnter(txtArama, Localization.oyunAdi);
+        //}
 
-        private void txtArama_Leave(object sender, EventArgs e)
-        {
-            textDoldur.TextLeave(txtArama, Localization.oyunAdi);
-        }
+        //private void txtArama_Leave(object sender, EventArgs e)
+        //{
+        //    textDoldur.TextLeave(txtArama, Localization.oyunAdi);
+        //}
 
-        private void txtArama_TextChanged(object sender, EventArgs e)
-        {
-            en();
-            oyunYonetici.OyunListele(dataGridView1, txtArama);
-            if (txtArama.Text == Localization.oyunAdi)
-            {
-                oyunYonetici.OyunListele(dataGridView1);
-            }
-        }
+        //private void txtArama_TextChanged(object sender, EventArgs e)
+        //{
+        //    en();
+        //    oyunYonetici.OyunListele(dataGridView1, txtArama);
+        //    if (txtArama.Text == Localization.oyunAdi)
+        //    {
+        //        oyunYonetici.OyunListele(dataGridView1);
+        //    }
+        //}
 
         private void btnPuan_MouseHover(object sender, EventArgs e)
         {
